@@ -6,12 +6,7 @@ import Link from 'next/link'
 import { useParams } from 'next/navigation'
 import { ArrowLeft, Star, Check, Package, Truck, Shield, Phone, Mail, Heart, Share2 } from 'lucide-react'
 
-// interface ProductProps {
-//   params: {
-//     id: string
-//   }
-// }
-
+export const runtime = 'edge'; // ✅ Add this
 export default function ProductPage() {
   const { id } = useParams()
   const [selectedImage, setSelectedImage] = useState(0)
