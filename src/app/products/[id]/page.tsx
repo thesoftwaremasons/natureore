@@ -3,15 +3,17 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useParams } from 'next/navigation'
 import { ArrowLeft, Star, Check, Package, Truck, Shield, Phone, Mail, Heart, Share2 } from 'lucide-react'
 
-interface ProductPageProps {
-  params: {
-    id: string
-  }
-}
+// interface ProductProps {
+//   params: {
+//     id: string
+//   }
+// }
 
-export default function ProductPage({ params }: ProductPageProps) {
+export default function ProductPage() {
+  const { id } = useParams()
   const [selectedImage, setSelectedImage] = useState(0)
   const [quantity, setQuantity] = useState(1)
   const [activeTab, setActiveTab] = useState('description')
@@ -172,14 +174,14 @@ export default function ProductPage({ params }: ProductPageProps) {
     }
   }
 
-  const product = products[params.id as keyof typeof products]
+  const product = products[id as keyof typeof products]
 
   if (!product) {
     return (
       <div className="pt-20 min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Product Not Found</h1>
-          <p className="text-gray-600 mb-8">The product you're looking for doesn't exist.</p>
+          <p className="text-gray-600 mb-8">The product you &apos;re looking for doesn &apos;t exist.</p>
           <Link href="/products" className="btn-primary">
             <ArrowLeft className="w-5 h-5" />
             Back to Products
@@ -283,7 +285,7 @@ export default function ProductPage({ params }: ProductPageProps) {
 
                 {/* Price */}
                 <div className="mb-6">
-                  <span className="text-3xl font-bold text-green-600">{product.price}</span>
+                  {/* <span className="text-3xl font-bold text-green-600">{product.price}</span> */}
                   <span className="text-gray-600 ml-2">{product.unit}</span>
                   <p className="text-sm text-gray-500 mt-1">Minimum order: {product.minOrder}</p>
                 </div>
@@ -484,7 +486,8 @@ export default function ProductPage({ params }: ProductPageProps) {
                     </p>
                     <div className="flex items-center justify-between">
                       <span className="text-green-600 font-semibold text-lg">
-                        {relatedProduct.price} {relatedProduct.unit}
+                        {/* {relatedProduct.price} {relatedProduct.unit} */}
+                        {relatedProduct.unit}
                       </span>
                       <span className="text-sm text-green-600 font-medium">
                         View Details →

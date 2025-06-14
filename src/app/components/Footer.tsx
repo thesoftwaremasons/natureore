@@ -15,7 +15,7 @@ export default function Footer() {
               <span className="text-xl font-bold">Natureore</span>
             </div>
             <p className="text-gray-400 mb-6">
-              "Natureore Logistics Limited – Bridging Continents, Cultivating Prosperity"
+              Natureore Logistics Limited – Bridging Continents, Cultivating Prosperity
             </p>
             <div className="flex space-x-4">
               <Link href="#" className="p-2 bg-green-900 rounded-md hover:bg-green-700 transition-colors">

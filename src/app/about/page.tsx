@@ -1,3 +1,5 @@
+"use client"
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { CheckCircle, Users, Globe, Award } from 'lucide-react'
@@ -75,14 +77,14 @@ export default function About() {
                   premium agricultural products and solid-state minerals.
                 </p>
                 <p>
-                  Our journey began with a simple belief: Africa's rich natural resources deserve to 
-                  reach the world's finest markets. Today, we work with hundreds of local farmers and 
+                  Our journey began with a simple belief: Africa &apos;s rich natural resources deserve to 
+                  reach the world &apos;s finest markets. Today, we work with hundreds of local farmers and 
                   producers, ensuring fair trade practices while delivering exceptional quality to our 
                   international clients.
                 </p>
                 <p>
                   Through sustainable sourcing, rigorous quality control, and innovative logistics 
-                  solutions, we've built a reputation for reliability and excellence that spans continents.
+                  solutions, we &apos;s ve built a reputation for reliability and excellence that spans continents.
                 </p>
               </div>
             </div>

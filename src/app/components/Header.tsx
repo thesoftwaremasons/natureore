@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ChevronDown, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import Navigation from './Navigation'
 
 
@@ -16,7 +16,7 @@ export default function Header() {
         <nav className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-          <img src="natureore.png" style={{width:"70px",height:"70px",borderRadius:"1-px"}} />
+          <Image src="/natureore.png" alt={''} width={50} height={50}  />
             {/* <div className="w-12 h-12 bg-green-900 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xl">N</span>
             </div>

@@ -10,7 +10,7 @@ export default function CTA() {
             Ready to Start Trading with Us?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Join hundreds of satisfied clients worldwide. Let's discuss how we can help grow your business 
+            Join hundreds of satisfied clients worldwide. Let &apos;s discuss how we can help grow your business 
             with our premium agricultural products and expert trade consulting services.
           </p>
           

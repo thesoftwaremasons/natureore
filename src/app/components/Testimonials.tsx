@@ -77,7 +77,7 @@ export default function Testimonials() {
               </div>
 
               <blockquote className="text-lg text-gray-700 mb-8 italic leading-relaxed">
-                "{testimonials[currentTestimonial].content}"
+            {testimonials[currentTestimonial].content}
               </blockquote>
 
               <div>

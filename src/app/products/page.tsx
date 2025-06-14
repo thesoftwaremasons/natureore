@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Search, Filter, Grid, List } from 'lucide-react'
+import { Search, Grid, List } from 'lucide-react'
 
 export default function Products() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -135,7 +135,7 @@ export default function Products() {
           <h1 className="text-5xl font-bold mb-6">Our Products</h1>
           <p className="text-xl opacity-90 max-w-2xl mx-auto">
             Discover our extensive range of premium agricultural products, minerals, and specialty items 
-            sourced from Africa's finest producers.
+            sourced from Africa &apos;s finest producers.
           </p>
         </div>
       </section>

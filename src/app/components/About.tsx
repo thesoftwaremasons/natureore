@@ -26,7 +26,7 @@ export default function About() {
             <h2 className="text-4xl font-bold text-gray-800 mb-6">Who We Are</h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
               Your Gateway to Global Trade and Prosperity. At Natureore Logistics Limited, 
-              we don't just trade—we connect continents, cultivate opportunities, and drive 
+              we don &apos;t just trade—we connect continents, cultivate opportunities, and drive 
               sustainable growth. As a premier international export and import company, we 
               specialize in agricultural products and solid-state mineral mining across Africa, 
               ensuring seamless logistics and efficient global operations.
