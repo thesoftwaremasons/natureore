@@ -63,7 +63,7 @@ export default function Header() {
               <div className="flex items-center space-x-2">
                 <Phone className={`w-4 h-4 ${isScrolled ? 'text-emerald-600' : 'text-emerald-200'}`} />
                 <span className={`text-sm font-medium ${isScrolled ? 'text-gray-700' : 'text-white'}`}>
-                  +234 (0) 123 456 7890
+                  +234 (0)  81 873 577 92
                 </span>
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function Header() {
             <div className="mt-6 px-4">
               <div className="flex items-center space-x-2 mb-4 text-emerald-600">
                 <Phone className="w-4 h-4" />
-                <span className="text-sm font-medium">+234 (0) 123 456 7890</span>
+                <span className="text-sm font-medium">+234 (0) 81 873 577 92</span>
               </div>
               <Link href="/contact" className="btn-primary block text-center w-full">
                 Contact Now

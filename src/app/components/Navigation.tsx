@@ -47,7 +47,7 @@ const productCategories = {
       { name: 'Gold', href: '/products/16' },
       { name: 'Lithium', href: '/products/17' },
       { name: 'Gypsum', href: '/products/18' },
-      { name: 'Iron Ore', href: '/products/iron-ore' },
+      { name: 'Iron Ore', href: '/products/19' },
     ]
   },
   'specialty': {
@@ -55,10 +55,10 @@ const productCategories = {
     icon: Star,
     color: 'from-orange-500 to-orange-600',
     items: [
-      { name: 'Plastic Scraps', href: '/products/plastic-scraps' },
-      { name: 'Black Soap', href: '/products/black-soap' },
-      { name: 'Animal Feeds', href: '/products/animal-feeds' },
-      { name: 'Children Clothing (African Fabrics)', href: '/products/african-fabrics' },
+      { name: 'Plastic Scraps', href: '/products/20' },
+      { name: 'Black Soap', href: '/products/21' },
+      { name: 'Animal Feeds', href: '/products/22' },
+      { name: 'Children Clothing (African Fabrics)', href: '/products/23' },
     ]
   }
 }
@@ -218,9 +218,9 @@ export default function Navigation({ mobile = false, isScrolled = false }: Navig
         )}
       </div>
 
-      <Link href="/contact" className={`${linkStyle} font-medium transition-all duration-300 hover:scale-105`}>
+      {/* <Link href="/contact" className={`${linkStyle} font-medium transition-all duration-300 hover:scale-105`}>
         Contact
-      </Link>
+      </Link> */}
     </nav>
   )
 }

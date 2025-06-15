@@ -53,7 +53,7 @@ export default function Contact() {
     {
       icon: Phone,
       title: 'Phone',
-      content: '+234 (0) 123 456 7890',
+      content: '+234 (0) 81 873 577 92',
       color: 'text-green-600'
     },
     {
@@ -163,7 +163,7 @@ export default function Contact() {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                      placeholder="+1 (555) 123-4567"
+                      placeholder="+234 08187357792"
                     />
                   </div>
                 </div>

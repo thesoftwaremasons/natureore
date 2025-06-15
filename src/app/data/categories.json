@@ -1,0 +1,37 @@
+[
+  { 
+    "id": "all", 
+    "name": "All Products", 
+    "count": 21, 
+    "icon": "Package",
+    "description": "Complete range of premium products across all categories"
+  },
+  { 
+    "id": "staples", 
+    "name": "Staples & Processed Foods", 
+    "count": 4, 
+    "icon": "Package",
+    "description": "Essential food items including PAP, Garri, noodles, and processed food varieties for daily nutrition and commercial use"
+  },
+  { 
+    "id": "cash-crops", 
+    "name": "Cash Crops & Natural Extracts", 
+    "count": 10, 
+    "icon": "Leaf",
+    "description": "Premium agricultural products including cashews, shea butter, spices, seeds, and natural extracts for export and manufacturing"
+  },
+  { 
+    "id": "minerals", 
+    "name": "Solid-State Minerals", 
+    "count": 4, 
+    "icon": "Gem",
+    "description": "High-grade minerals including gold, lithium, gypsum, and iron ore for industrial, investment, and manufacturing applications"
+  },
+  { 
+    "id": "specialty", 
+    "name": "Specialty Products", 
+    "count": 3, 
+    "icon": "Star",
+    "description": "Unique products including recycled materials, traditional crafts, animal feeds, and cultural items with specialized applications"
+  }
+]

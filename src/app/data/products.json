@@ -1,0 +1,551 @@
+[
+  {
+    "id": "1",
+    "name": "PAP (Custard)",
+    "category": "staples",
+    "categoryName": "Staples & Processed Foods",
+    "price": "$25",
+    "unit": "per kg",
+    "minOrder": "100 kg",
+    "image": "/api/placeholder/400/300",
+    "images": [
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600"
+    ],
+    "description": "Premium quality custard powder made from the finest ingredients. Our PAP is rich in nutrients and provides excellent nutritional value. Perfect for breakfast, desserts, and various culinary applications.",
+    "features": ["High Protein Content", "Natural Ingredients", "Export Quality", "Long Shelf Life", "Gluten-Free Option Available", "Rich in Vitamins and Minerals"],
+    "availability": "In Stock",
+    "rating": 4.8,
+    "reviews": 24,
+    "badge": "Premium",
+    "specifications": {
+      "Product Type": "Custard Powder",
+      "Origin": "Nigeria",
+      "Shelf Life": "18 months",
+      "Packaging": "25kg bags, 50kg bags",
+      "Moisture Content": "< 12%",
+      "Protein Content": "≥ 15%",
+      "Storage": "Cool, dry place",
+      "Certifications": "ISO 22000, HACCP"
+    },
+    "nutritionalInfo": {
+      "Energy": "350 kcal/100g",
+      "Protein": "15g/100g",
+      "Carbohydrates": "65g/100g",
+      "Fat": "2g/100g",
+      "Fiber": "3g/100g",
+      "Sodium": "200mg/100g"
+    },
+    "benefits": [
+      "Rich source of plant-based protein",
+      "Easy to digest and prepare",
+      "Suitable for all age groups",
+      "Versatile cooking ingredient",
+      "Long lasting energy source"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "GARRI (Cassava Flakes)",
+    "category": "staples",
+    "categoryName": "Staples & Processed Foods",
+    "price": "$15",
+    "unit": "per kg",
+    "minOrder": "500 kg",
+    "image": "/api/placeholder/400/300",
+    "images": [
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600"
+    ],
+    "description": "Traditional cassava flakes processed using modern techniques while maintaining authentic taste and nutrition. Our Garri is carefully processed to ensure quality and safety standards.",
+    "features": ["Gluten-Free", "Long Shelf Life", "Organic Processing", "Traditional Taste", "High Energy Content", "Easy to Prepare"],
+    "availability": "In Stock",
+    "rating": 4.6,
+    "reviews": 18,
+    "badge": "Organic",
+    "specifications": {
+      "Product Type": "Cassava Flakes",
+      "Origin": "Nigeria",
+      "Shelf Life": "12 months",
+      "Packaging": "25kg bags, 50kg bags",
+      "Moisture Content": "< 10%",
+      "pH Level": "3.5 - 4.5",
+      "Storage": "Cool, dry place",
+      "Certifications": "NAFDAC, Export Quality"
+    },
+    "nutritionalInfo": {
+      "Energy": "330 kcal/100g",
+      "Carbohydrates": "80g/100g",
+      "Protein": "2g/100g",
+      "Fat": "0.5g/100g",
+      "Fiber": "4g/100g",
+      "Iron": "2mg/100g"
+    },
+    "benefits": [
+      "Excellent source of carbohydrates",
+      "Naturally gluten-free",
+      "Quick energy source",
+      "Supports digestive health",
+      "Affordable nutrition"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Indomie Noodles",
+    "category": "staples",
+    "categoryName": "Staples & Processed Foods",
+    "price": "$12",
+    "unit": "per carton",
+    "minOrder": "100 cartons",
+    "image": "/api/placeholder/400/300",
+    "images": [
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600"
+    ],
+    "description": "Popular instant noodles with various flavors, perfect for quick meals. Made with quality wheat flour and authentic seasoning for consistent taste and satisfaction.",
+    "features": ["Quick Cook (3 mins)", "Multiple Flavors", "Affordable", "Convenient Packaging", "Long Shelf Life", "Consistent Quality"],
+    "availability": "In Stock",
+    "rating": 4.4,
+    "reviews": 156,
+    "badge": "Best Seller",
+    "specifications": {
+      "Product Type": "Instant Noodles",
+      "Origin": "Nigeria",
+      "Shelf Life": "24 months",
+      "Packaging": "40 packs per carton",
+      "Net Weight": "70g per pack",
+      "Cooking Time": "3 minutes",
+      "Storage": "Cool, dry place",
+      "Certifications": "NAFDAC, Halal"
+    },
+    "nutritionalInfo": {
+      "Energy": "440 kcal/100g",
+      "Protein": "9g/100g",
+      "Carbohydrates": "58g/100g",
+      "Fat": "20g/100g",
+      "Fiber": "2g/100g",
+      "Sodium": "1200mg/100g"
+    },
+    "benefits": [
+      "Quick and convenient meal solution",
+      "Source of carbohydrates for energy",
+      "Affordable nutrition option",
+      "Multiple flavor varieties",
+      "Long shelf life for storage"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Process Foods Mix",
+    "category": "staples",
+    "categoryName": "Staples & Processed Foods",
+    "price": "Varies",
+    "unit": "per package",
+    "minOrder": "Custom",
+    "image": "/api/placeholder/400/300",
+    "images": [
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600"
+    ],
+    "description": "Wide range of processed foods including flours, cereals, and packaged goods. Customizable packages to meet specific business and retail requirements.",
+    "features": ["Variety Pack", "Quality Assured", "Bulk Available", "Custom Orders", "Mixed Selection", "Wholesale Pricing"],
+    "availability": "In Stock",
+    "rating": 4.5,
+    "reviews": 89,
+    "badge": "Variety",
+    "specifications": {
+      "Product Type": "Mixed Processed Foods",
+      "Origin": "Multiple",
+      "Shelf Life": "Varies by product",
+      "Packaging": "Custom packaging available",
+      "Product Range": "50+ items",
+      "Order Type": "Bulk/Wholesale",
+      "Storage": "As per individual products",
+      "Certifications": "Various (NAFDAC, ISO)"
+    },
+    "nutritionalInfo": {
+      "Energy": "Varies by product",
+      "Protein": "Varies by product",
+      "Carbohydrates": "Varies by product",
+      "Fat": "Varies by product",
+      "Fiber": "Varies by product",
+      "Minerals": "Varies by product"
+    },
+    "benefits": [
+      "One-stop solution for diverse needs",
+      "Cost-effective bulk purchasing",
+      "Custom package configurations",
+      "Quality assurance across products",
+      "Flexible order quantities"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Roasted Cashew Nuts",
+    "category": "cash-crops",
+    "categoryName": "Cash Crops & Natural Extracts",
+    "price": "$45",
+    "unit": "per kg",
+    "minOrder": "50 kg",
+    "image": "/api/placeholder/400/300",
+    "images": [
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600"
+    ],
+    "description": "Premium grade roasted cashew nuts, carefully selected and processed to maintain their natural flavor and nutritional value. Perfect for snacking, cooking, and food manufacturing.",
+    "features": ["Grade A Quality", "Rich in Minerals", "Premium Roasting", "Natural Flavor", "High Nutritional Value", "Export Grade"],
+    "availability": "In Stock",
+    "rating": 4.9,
+    "reviews": 42,
+    "badge": "Best Seller",
+    "specifications": {
+      "Product Type": "Roasted Cashew Nuts",
+      "Origin": "Nigeria",
+      "Grade": "W180, W240, W320",
+      "Packaging": "10kg cartons, 25kg bags",
+      "Moisture Content": "< 5%",
+      "Broken Ratio": "< 5%",
+      "Storage": "Cool, dry place",
+      "Certifications": "Organic, Fair Trade"
+    },
+    "nutritionalInfo": {
+      "Energy": "553 kcal/100g",
+      "Protein": "18g/100g",
+      "Fat": "44g/100g",
+      "Carbohydrates": "30g/100g",
+      "Fiber": "3g/100g",
+      "Magnesium": "292mg/100g"
+    },
+    "benefits": [
+      "Heart-healthy fats",
+      "Rich in antioxidants",
+      "Supports bone health",
+      "Boosts immune system",
+      "Natural energy source"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Cashew Kernels",
+    "category": "cash-crops",
+    "categoryName": "Cash Crops & Natural Extracts",
+    "price": "$48",
+    "unit": "per kg",
+    "minOrder": "25 kg",
+    "image": "/api/placeholder/400/300",
+    "images": [
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600"
+    ],
+    "description": "High-quality cashew kernels, perfect for snacking and culinary use. Hand-selected for size and quality, these kernels offer exceptional taste and nutritional benefits.",
+    "features": ["Whole Kernels", "Premium Grade", "Rich Flavor", "Protein Rich", "Hand Selected", "Natural Processing"],
+    "availability": "In Stock",
+    "rating": 4.8,
+    "reviews": 38,
+    "badge": "Premium",
+    "specifications": {
+      "Product Type": "Raw Cashew Kernels",
+      "Origin": "Nigeria",
+      "Grade": "W180, W240",
+      "Packaging": "10kg vacuum bags",
+      "Moisture Content": "< 3%",
+      "Broken Ratio": "< 3%",
+      "Storage": "Cool, dry place",
+      "Certifications": "Organic Certified"
+    },
+    "nutritionalInfo": {
+      "Energy": "574 kcal/100g",
+      "Protein": "20g/100g",
+      "Fat": "46g/100g",
+      "Carbohydrates": "27g/100g",
+      "Fiber": "2g/100g",
+      "Copper": "2.2mg/100g"
+    },
+    "benefits": [
+      "High in healthy monounsaturated fats",
+      "Excellent source of copper and magnesium",
+      "Supports heart health",
+      "Natural source of antioxidants",
+      "Aids in bone development"
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Raw Cashew Nuts",
+    "category": "cash-crops",
+    "categoryName": "Cash Crops & Natural Extracts",
+    "price": "$35",
+    "unit": "per kg",
+    "minOrder": "1000 kg",
+    "image": "/api/placeholder/400/300",
+    "images": [
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600"
+    ],
+    "description": "High-grade raw cashew nuts for processing and manufacturing. Sourced directly from farms and carefully dried for optimal quality and shelf life.",
+    "features": ["Unprocessed", "Grade A", "Bulk Available", "Industrial Grade", "Farm Fresh", "Export Quality"],
+    "availability": "In Stock",
+    "rating": 4.7,
+    "reviews": 31,
+    "badge": "Bulk Available",
+    "specifications": {
+      "Product Type": "Raw Cashew Nuts in Shell",
+      "Origin": "Nigeria",
+      "Grade": "Premium Grade",
+      "Packaging": "80kg jute bags",
+      "Moisture Content": "< 10%",
+      "Foreign Matter": "< 1%",
+      "Storage": "Dry, ventilated warehouse",
+      "Certifications": "Export Quality Certificate"
+    },
+    "nutritionalInfo": {
+      "Energy": "596 kcal/100g (kernel)",
+      "Protein": "21g/100g (kernel)",
+      "Fat": "47g/100g (kernel)",
+      "Carbohydrates": "26g/100g (kernel)",
+      "Fiber": "3g/100g (kernel)",
+      "Phosphorus": "490mg/100g (kernel)"
+    },
+    "benefits": [
+      "Raw material for processing industry",
+      "High kernel outturn ratio",
+      "Consistent quality supply",
+      "Competitive bulk pricing",
+      "Sustainable sourcing"
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Shea Butter",
+    "category": "cash-crops",
+    "categoryName": "Cash Crops & Natural Extracts",
+    "price": "$40",
+    "unit": "per kg",
+    "minOrder": "25 kg",
+    "image": "/api/placeholder/400/300",
+    "images": [
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600"
+    ],
+    "description": "Pure, natural shea butter for cosmetic and therapeutic applications. Hand-extracted using traditional methods to preserve natural healing properties and rich nutrient content.",
+    "features": ["100% Pure", "Unrefined", "Fair Trade", "Moisturizing", "Hand Extracted", "Traditional Methods"],
+    "availability": "In Stock",
+    "rating": 4.8,
+    "reviews": 28,
+    "badge": "Fair Trade",
+    "specifications": {
+      "Product Type": "Raw Unrefined Shea Butter",
+      "Origin": "Northern Nigeria",
+      "Grade": "Grade A",
+      "Packaging": "25kg containers",
+      "Melting Point": "32-38°C",
+      "Acid Value": "< 2.0",
+      "Storage": "Cool, dry place",
+      "Certifications": "Fair Trade, Organic"
+    },
+    "nutritionalInfo": {
+      "Oleic Acid": "40-60%",
+      "Stearic Acid": "20-50%",
+      "Linoleic Acid": "3-11%",
+      "Palmitic Acid": "2-9%",
+      "Vitamins": "A, E, F",
+      "Cinnamic Esters": "Natural UV protection"
+    },
+    "benefits": [
+      "Natural moisturizer and skin protector",
+      "Anti-inflammatory properties",
+      "Natural UV protection",
+      "Healing properties for skin conditions",
+      "Rich in vitamins and fatty acids"
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Gold",
+    "category": "minerals",
+    "categoryName": "Solid-State Minerals",
+    "price": "Market Price",
+    "unit": "per ounce",
+    "minOrder": "1 ounce",
+    "image": "/api/placeholder/400/300",
+    "images": [
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600"
+    ],
+    "description": "High-grade gold from certified mining operations with ethical sourcing. Investment-grade gold bars and nuggets available for industrial and investment purposes.",
+    "features": ["99.9% Pure", "Certified Assay", "Ethical Mining", "Investment Grade", "Traceable Source", "International Standards"],
+    "availability": "Available",
+    "rating": 5.0,
+    "reviews": 15,
+    "badge": "Certified",
+    "specifications": {
+      "Product Type": "Gold Bars/Nuggets",
+      "Origin": "Nigeria",
+      "Purity": "99.9% (24 karat)",
+      "Packaging": "Sealed assay certificates",
+      "Weight Options": "1oz, 10oz, 1kg bars",
+      "Assay": "Independent certification",
+      "Storage": "Secure vault facility",
+      "Certifications": "LBMA Good Delivery"
+    },
+    "nutritionalInfo": {
+      "Purity": "99.9% Au",
+      "Density": "19.32 g/cm³",
+      "Melting Point": "1064°C",
+      "Electrical Conductivity": "Excellent",
+      "Corrosion Resistance": "Complete",
+      "Malleability": "Highest among metals"
+    },
+    "benefits": [
+      "Excellent store of value",
+      "Hedge against inflation",
+      "Portfolio diversification",
+      "Industrial applications",
+      "Jewelry manufacturing"
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Lithium",
+    "category": "minerals",
+    "categoryName": "Solid-State Minerals",
+    "price": "Quote on Request",
+    "unit": "per ton",
+    "minOrder": "10 tons",
+    "image": "/api/placeholder/400/300",
+    "images": [
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600"
+    ],
+    "description": "High-grade lithium for battery and industrial applications. Essential mineral for electric vehicle batteries, energy storage systems, and various industrial processes.",
+    "features": ["Battery Grade", "High Purity", "Sustainable Mining", "Industrial Use", "EV Battery Ready", "Energy Storage"],
+    "availability": "Available",
+    "rating": 4.9,
+    "reviews": 12,
+    "badge": "Industrial Grade",
+    "specifications": {
+      "Product Type": "Lithium Carbonate/Hydroxide",
+      "Origin": "Nigeria",
+      "Grade": "Battery Grade (>99.5%)",
+      "Packaging": "1-ton bulk bags",
+      "Particle Size": "D50: 10-20 μm",
+      "Moisture Content": "< 0.5%",
+      "Storage": "Dry, controlled environment",
+      "Certifications": "ISO 9001, Battery Grade"
+    },
+    "nutritionalInfo": {
+      "Li2CO3 Content": ">99.5%",
+      "Sulfate (SO4)": "<200 ppm",
+      "Chloride (Cl)": "<50 ppm",
+      "Iron (Fe)": "<10 ppm",
+      "Calcium (Ca)": "<400 ppm",
+      "Magnesium (Mg)": "<300 ppm"
+    },
+    "benefits": [
+      "Essential for EV battery production",
+      "High energy density applications",
+      "Long cycle life in batteries",
+      "Critical mineral for green energy",
+      "Growing market demand"
+    ]
+  },
+  {
+    "id": "20",
+    "name": "Plastic Scraps",
+    "category": "specialty",
+    "categoryName": "Specialty Products",
+    "price": "$5",
+    "unit": "per kg",
+    "minOrder": "1000 kg",
+    "image": "/api/placeholder/400/300",
+    "images": [
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600"
+    ],
+    "description": "Clean, sorted plastic scraps for recycling industry and manufacturing. Environmentally responsible disposal and processing of plastic waste into reusable materials.",
+    "features": ["Sorted by Type", "Clean Processing", "Recyclable", "Various Polymer Types", "Eco-Friendly", "Industrial Grade"],
+    "availability": "In Stock",
+    "rating": 4.4,
+    "reviews": 19,
+    "badge": "Eco-Friendly",
+    "specifications": {
+      "Product Type": "Mixed Plastic Scraps",
+      "Types Available": "PET, HDPE, PP, LDPE",
+      "Packaging": "1-ton bales",
+      "Contamination": "< 2%",
+      "Moisture Content": "< 1%",
+      "Color Separation": "Available",
+      "Storage": "Covered warehouse",
+      "Certifications": "Recycling Standards"
+    },
+    "nutritionalInfo": {
+      "PET Content": "40-50%",
+      "HDPE Content": "20-30%",
+      "PP Content": "15-25%",
+      "LDPE Content": "10-15%",
+      "Other Plastics": "< 5%",
+      "Non-Plastic Content": "< 2%"
+    },
+    "benefits": [
+      "Reduces environmental waste",
+      "Cost-effective raw material",
+      "Supports circular economy",
+      "Consistent supply available",
+      "Various grades and types"
+    ]
+  },
+  {
+    "id": "21",
+    "name": "Black Soap",
+    "category": "specialty",
+    "categoryName": "Specialty Products",
+    "price": "$20",
+    "unit": "per kg",
+    "minOrder": "10 kg",
+    "image": "/api/placeholder/400/300",
+    "images": [
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600",
+      "/api/placeholder/600/600"
+    ],
+    "description": "Traditional African black soap made with natural ingredients and herbs. Handcrafted using ancient recipes with plantain skins, palm kernel oil, and natural botanicals.",
+    "features": ["100% Natural", "Handmade", "Organic Ingredients", "Skin Friendly", "Traditional Recipe", "Chemical-Free"],
+    "availability": "In Stock",
+    "rating": 4.7,
+    "reviews": 35,
+    "badge": "Handmade",
+    "specifications": {
+      "Product Type": "Traditional Black Soap",
+      "Origin": "West Africa",
+      "Main Ingredients": "Plantain skins, Palm oil, Shea butter",
+      "Packaging": "1kg blocks, 5kg bulk",
+      "pH Level": "9.5-10.5",
+      "Shelf Life": "36 months",
+      "Storage": "Cool, dry place",
+      "Certifications": "Organic, Handmade"
+    },
+    "nutritionalInfo": {
+      "Palm Kernel Oil": "30-40%",
+      "Plantain Ash": "20-30%",
+      "Shea Butter": "15-25%",
+      "Cocoa Pod Ash": "10-15%",
+      "Natural Glycerin": "5-10%",
+      "Botanical Extracts": "2-5%"
+    },
+    "benefits": [
+      "Natural antibacterial properties",
+      "Gentle on sensitive skin",
+      "Rich in vitamins and antioxidants",
+      "Moisturizing and cleansing",
+      "Suitable for all skin types"
+    ]
+  }
+]
