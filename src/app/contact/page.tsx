@@ -71,9 +71,9 @@ export default function Contact() {
   ]
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 bg-emerald-700 text-white">
       {/* Hero Section */}
-      <section className="py-20 gradient-bg text-white">
+      <section className="py-20 bg-emerald-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl opacity-90 max-w-2xl mx-auto">

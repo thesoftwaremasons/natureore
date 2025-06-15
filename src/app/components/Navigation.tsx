@@ -2,15 +2,18 @@
 
 import { useRef, useState } from 'react'
 import Link from 'next/link'
-import { ChevronDown, ChevronRight } from 'lucide-react'
+import { ChevronDown, ChevronRight, Package, Leaf, Gem, Star } from 'lucide-react'
 
 interface NavigationProps {
   mobile?: boolean
+  isScrolled?: boolean
 }
 
 const productCategories = {
   'staples': {
     title: 'Staples & Processed Foods',
+    icon: Package,
+    color: 'from-blue-500 to-blue-600',
     items: [
       { name: 'PAP (Custard)', href: '/products/1' },
       { name: 'GARRI (Cassava Flakes)', href: '/products/2' },
@@ -20,6 +23,8 @@ const productCategories = {
   },
   'cash-crops': {
     title: 'Cash Crops & Natural Extracts',
+    icon: Leaf,
+    color: 'from-emerald-500 to-emerald-600',
     items: [
       { name: 'Roasted Cashew Nuts', href: '/products/5' },
       { name: 'Cashew Kernels', href: '/products/6' },
@@ -36,6 +41,8 @@ const productCategories = {
   },
   'minerals': {
     title: 'Solid-State Minerals',
+    icon: Gem,
+    color: 'from-purple-500 to-purple-600',
     items: [
       { name: 'Gold', href: '/products/16' },
       { name: 'Lithium', href: '/products/17' },
@@ -45,6 +52,8 @@ const productCategories = {
   },
   'specialty': {
     title: 'Specialty Products',
+    icon: Star,
+    color: 'from-orange-500 to-orange-600',
     items: [
       { name: 'Plastic Scraps', href: '/products/plastic-scraps' },
       { name: 'Black Soap', href: '/products/black-soap' },
@@ -54,68 +63,73 @@ const productCategories = {
   }
 }
 
-export default function Navigation({ mobile = false }: NavigationProps) {
+export default function Navigation({ mobile = false, isScrolled = false }: NavigationProps) {
   const [active, setActive] = useState<string | null>(null)
-
   const [isOpen, setIsOpen] = useState(false)
-const timeoutRef = useRef<NodeJS.Timeout | null>(null)
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null)
 
-const handleMouseEnter = () => {
-  if (timeoutRef.current) clearTimeout(timeoutRef.current)
-  setIsOpen(true)
-}
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current)
+    setIsOpen(true)
+  }
 
-const handleMouseLeave = () => {
-  timeoutRef.current = setTimeout(() => {
-    setIsOpen(false)
-  }, 200) // small delay to allow cursor travel
-}
-
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setIsOpen(false)
+    }, 200)
+  }
 
   const toggle = (key: string) => {
     setActive(prev => (prev === key ? null : key))
   }
 
+  const linkStyle = mobile || isScrolled 
+    ? "text-gray-800 hover:text-emerald-600" 
+    : "text-white hover:text-emerald-200"
+
   if (mobile) {
     return (
-      <nav className="space-y-2">
+      <nav className="space-y-1 px-4">
         {['Home', 'About', 'Contact'].map((item) => (
           <Link
             key={item}
             href={`/${item.toLowerCase().replace(/\s/g, '')}`}
-            className="block py-2 text-gray-800 hover:text-green-600"
+            className="block py-3 px-4 text-gray-800 hover:text-emerald-600 hover:bg-emerald-50 rounded-xl transition-all duration-300 font-medium"
           >
             {item}
           </Link>
         ))}
 
-        <div className="border-t pt-2">
+        <div className="border-t border-gray-200 pt-4 mt-4">
           <button
             onClick={() => toggle('products')}
-            className="flex justify-between w-full py-2 text-gray-800 hover:text-green-600"
+            className="flex justify-between w-full py-3 px-4 text-gray-800 hover:text-emerald-600 hover:bg-emerald-50 rounded-xl transition-all duration-300 font-medium"
           >
             Products
-            <ChevronDown className={`w-4 h-4 transition-transform ${active === 'products' ? 'rotate-180' : ''}`} />
+            <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${active === 'products' ? 'rotate-180' : ''}`} />
           </button>
 
           {active === 'products' && (
-            <div className="mt-2 pl-2 space-y-2">
+            <div className="mt-2 ml-4 space-y-1">
               {Object.entries(productCategories).map(([key, cat]) => (
                 <div key={key}>
                   <button
                     onClick={() => toggle(key)}
-                    className="flex justify-between w-full py-1 text-sm text-gray-700 hover:text-green-600"
+                    className="flex justify-between w-full py-2 px-4 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-300 text-sm"
                   >
-                    {cat.title}
-                    <ChevronRight className={`w-4 h-4 transition-transform ${active === key ? 'rotate-90' : ''}`} />
+                    <div className="flex items-center space-x-2">
+                      <cat.icon className="w-4 h-4" />
+                      <span>{cat.title}</span>
+                    </div>
+                    <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${active === key ? 'rotate-90' : ''}`} />
                   </button>
                   {active === key && (
-                    <div className="ml-4 mt-1 space-y-1">
+                    <div className="ml-6 mt-1 space-y-1">
                       {cat.items.map((item) => (
                         <Link
                           key={item.href}
                           href={item.href}
-                          className="block text-xs text-gray-600 hover:text-green-600"
+                          className="block py-2 px-3 text-xs text-gray-600 hover:text-emerald-600 hover:bg-emerald-50 rounded transition-all duration-300"
                         >
                           {item.name}
                         </Link>
@@ -132,50 +146,81 @@ const handleMouseLeave = () => {
   }
 
   return (
-    <nav className="flex space-x-6 items-center">
-      <Link href="/" className="text-gray-800 hover:text-green-600 font-medium transition-colors">Home</Link>
-      <Link href="/about" className="text-gray-800 hover:text-green-600 font-medium transition-colors">About</Link>
+    <nav className="flex space-x-8 items-center">
+      <Link href="/" className={`${linkStyle} font-medium transition-all duration-300 hover:scale-105`}>
+        Home
+      </Link>
+      <Link href="/about" className={`${linkStyle} font-medium transition-all duration-300 hover:scale-105`}>
+        About
+      </Link>
 
       <div
-  className="relative"
-  onMouseEnter={handleMouseEnter}
-  onMouseLeave={handleMouseLeave}
->
-  <button className="flex items-center gap-1 text-gray-800 hover:text-green-600 font-medium transition-colors">
-    Products
-    <ChevronDown className="w-4 h-4" />
-  </button>
+        className="relative"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <button className={`flex items-center gap-2 ${linkStyle} font-medium transition-all duration-300 hover:scale-105`}>
+          Products
+          <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
+        </button>
 
-  {isOpen && (
-    <div className="absolute top-full left-0 mt-2 bg-white shadow-xl border rounded-lg w-[650px] z-50">
-      <div className="grid grid-cols-2 gap-4 p-4">
-        {Object.entries(productCategories).map(([key, cat]) => (
-          <div key={key} className="relative">
-            <div className="font-semibold text-green-700 mb-1">{cat.title}</div>
-            <div className="space-y-1">
-              {cat.items.slice(0, 5).map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="block text-sm text-gray-600 hover:text-green-600 transition"
-                >
-                  {item.name}
-                </Link>
-              ))}
-              {cat.items.length > 5 && (
-                <Link href={cat.items[0].href.split('/')[0] + '/' + key}>
-                  <span className="text-xs text-green-500 hover:underline">View all</span>
-                </Link>
-              )}
+        {isOpen && (
+          <div className="absolute top-full left-0 mt-4 bg-white/95 backdrop-blur-xl premium-shadow border border-white/20 rounded-2xl w-[700px] z-50 overflow-hidden">
+            <div className="p-6">
+              <div className="grid grid-cols-2 gap-6">
+                {Object.entries(productCategories).map(([key, cat]) => (
+                  <div key={key} className="relative group">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className={`p-2 rounded-lg bg-gradient-to-br ${cat.color}`}>
+                        <cat.icon className="w-4 h-4 text-white" />
+                      </div>
+                      <div className="font-semibold text-emerald-700 text-sm">{cat.title}</div>
+                    </div>
+                    <div className="space-y-2 ml-2">
+                      {cat.items.slice(0, 5).map((item) => (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          className="block text-sm text-gray-600 hover:text-emerald-600 transition-colors duration-300 py-1 px-2 hover:bg-emerald-50 rounded-lg"
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                      {cat.items.length > 5 && (
+                        <Link 
+                          href={`/products?category=${key}`}
+                          className="inline-flex items-center text-xs text-emerald-500 hover:text-emerald-600 font-medium mt-2"
+                        >
+                          View all ({cat.items.length})
+                          <ChevronRight className="w-3 h-3 ml-1" />
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              
+              {/* Footer in dropdown */}
+              <div className="mt-6 pt-4 border-t border-gray-200/50">
+                <div className="text-center">
+                  <p className="text-xs text-gray-500 mb-2">Discover premium products from Africa</p>
+                  <Link 
+                    href="/products" 
+                    className="inline-flex items-center text-sm text-emerald-600 hover:text-emerald-700 font-medium"
+                  >
+                    Browse All Products
+                    <ChevronRight className="w-4 h-4 ml-1" />
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
-        ))}
+        )}
       </div>
-    </div>
-  )}
-</div>
 
-      <Link href="/contact" className="text-gray-800 hover:text-green-600 font-medium transition-colors">Contact</Link>
+      <Link href="/contact" className={`${linkStyle} font-medium transition-all duration-300 hover:scale-105`}>
+        Contact
+      </Link>
     </nav>
   )
 }

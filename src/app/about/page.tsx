@@ -50,9 +50,9 @@ export default function About() {
   ]
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 bg-emerald-700 text-white">
       {/* Hero Section */}
-      <section className="py-20 gradient-bg text-white">
+      <section className="py-20 bg-emerald-700 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold mb-6">About Natureore Logistics</h1>

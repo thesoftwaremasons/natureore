@@ -1,10 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --primary-green: #22c55e;
-  --dark-green: #16a34a;
-  --light-green: #86efac;
-  --accent-green: #15803d;
+  --primary-green: #064e3b;
+  --dark-green: #022c22;
+  --medium-green: #065f46;
+  --light-green: #059669;
+  --accent-green: #10b981;
+  --sage-green: #6b7280;
+  --glass-bg: rgba(6, 78, 59, 0.1);
+  --glass-border: rgba(6, 78, 59, 0.2);
 }
 
 @theme inline {
@@ -20,17 +24,35 @@
     --foreground: #ededed;
   }
 }
+
 @layer components {
   .btn-primary {
-    @apply bg-green-900 hover:bg-green-900 text-white px-6 py-3 rounded-lg transition-all duration-300 font-medium inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl;
+    @apply bg-gradient-to-r from-emerald-900 to-emerald-800 hover:from-emerald-800 hover:to-emerald-700 text-white px-8 py-4 rounded-xl transition-all duration-500 font-semibold inline-flex items-center justify-center space-x-2 shadow-2xl hover:shadow-emerald-900/25 hover:scale-105 border border-emerald-700/50 backdrop-blur-sm;
   }
   
   .btn-secondary {
-    @apply bg-white hover:bg-gray-50 text-green-900 border-2 border-green-900 hover:border-green-900 px-6 py-3 rounded-lg transition-all duration-300 font-medium inline-flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl;
+    @apply bg-white/95 hover:bg-white text-emerald-900 border-2 border-emerald-900/20 hover:border-emerald-700 px-8 py-4 rounded-xl transition-all duration-500 font-semibold inline-flex items-center justify-center space-x-2 shadow-2xl hover:shadow-emerald-900/10 hover:scale-105 backdrop-blur-sm;
+  }
+  
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl;
+  }
+  
+  .dark-glass-card {
+    @apply bg-emerald-900/10 backdrop-blur-xl border border-emerald-900/20 shadow-2xl rounded-2xl;
   }
   
   .gradient-bg {
-    background: linear-gradient(135deg, #14532D 0%, #16a34a 100%);
+    background: linear-gradient(135deg, #022c22 0%, #064e3b 35%, #065f46 70%, #059669 100%);
+  }
+  
+  .gradient-bg-alt {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
+  }
+  
+  .premium-shadow {
+    box-shadow: 0 25px 50px -12px rgba(6, 78, 59, 0.25), 
+                0 0 0 1px rgba(6, 78, 59, 0.05);
   }
   
   .line-clamp-2 {
@@ -41,7 +63,15 @@
   }
   
   .animate-fade-in-up {
-    animation: fadeInUp 0.8s ease-out forwards;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
   }
   
   .animation-delay-200 {
@@ -51,7 +81,23 @@
   .animation-delay-400 {
     animation-delay: 0.4s;
   }
+  
+  .animation-delay-600 {
+    animation-delay: 0.6s;
+  }
+  
+  .premium-text-gradient {
+    background: linear-gradient(135deg, #064e3b 0%, #059669 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .floating-element {
+    animation: float 6s ease-in-out infinite;
+  }
 }
+
 @layer utilities {
   .scrollbar-hide {
     -ms-overflow-style: none;
@@ -60,20 +106,68 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+  
+  .text-shadow-lg {
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-/* body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Premium scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #064e3b, #059669);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #022c22, #064e3b);
+}
