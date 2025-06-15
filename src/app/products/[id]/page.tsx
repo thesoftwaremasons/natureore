@@ -83,7 +83,7 @@ export default function ProductPage() {
   const handleInquiry = () => {
     if (!product) return
     const message = `Hi, I'm interested in ${product.name}. Please provide more information about pricing, availability, and shipping options.`
-    const whatsappUrl = `https://wa.me/2341234567890?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/2348187357792?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')
   }
 
@@ -137,7 +137,7 @@ export default function ProductPage() {
   const categoryInfo = categoriesData.find(cat => cat.id === product.category) as Category | undefined
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 bg-emerald-700 text-white">
       {/* Breadcrumb */}
       <div className="bg-gray-50 py-4">
         <div className="container mx-auto px-4">
@@ -258,11 +258,12 @@ export default function ProductPage() {
                   <div className="flex items-baseline space-x-2 mb-2">
                     {product.price !== "Market Price" && product.price !== "Quote on Request" && product.price !== "Varies" ? (
                       <>
-                        <span className="text-3xl font-bold text-green-600">{product.price}</span>
+                        {/* <span className="text-3xl font-bold text-green-600">{product.price}</span> */}
                         <span className="text-gray-600">{product.unit}</span>
                       </>
                     ) : (
-                      <span className="text-2xl font-bold text-gray-700">{product.price}</span>
+                      // <span className="text-2xl font-bold text-gray-700">{product.price}</span>
+                      <span className="text-2xl font-bold text-gray-700">{}</span>
                     )}
                   </div>
                   <p className="text-sm text-gray-500">Minimum order: {product.minOrder}</p>
@@ -274,14 +275,14 @@ export default function ProductPage() {
                     product.availability === 'In Stock'
                       ? 'bg-green-100 text-green-600'
                       : product.availability === 'Available'
-                      ? 'bg-blue-100 text-blue-600'
+                      ? 'bg-blue-100 text-green-600'
                       : 'bg-yellow-100 text-yellow-600'
                   }`}>
                     <div className={`w-2 h-2 rounded-full mr-2 ${
                       product.availability === 'In Stock' 
                         ? 'bg-green-500' 
                         : product.availability === 'Available'
-                        ? 'bg-blue-500'
+                        ? 'bg-green-500'
                         : 'bg-yellow-500'
                     }`} />
                     {product.availability}
@@ -516,7 +517,8 @@ export default function ProductPage() {
                             <span className="text-gray-500 text-sm ml-1">{relatedProduct.unit}</span>
                           </>
                         ) : (
-                          <span className="text-gray-700 font-medium">{relatedProduct.price}</span>
+                          // <span className="text-gray-700 font-medium">{relatedProduct.price}</span>
+                          <span className="text-gray-700 font-medium">{}</span>
                         )}
                       </div>
                       <span className="text-sm text-green-600 font-medium group-hover:text-green-700">

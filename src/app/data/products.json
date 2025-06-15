@@ -7,12 +7,12 @@
     "price": "$25",
     "unit": "per kg",
     "minOrder": "100 kg",
-    "image": "/api/placeholder/400/300",
+    "image": "/products/pap.jpg",
     "images": [
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600"
+     "/products/pap.jpg",
+      "/products/pap.jpg",
+     "/products/pap.jpg",
+    "/products/pap.jpg"
     ],
     "description": "Premium quality custard powder made from the finest ingredients. Our PAP is rich in nutrients and provides excellent nutritional value. Perfect for breakfast, desserts, and various culinary applications.",
     "features": ["High Protein Content", "Natural Ingredients", "Export Quality", "Long Shelf Life", "Gluten-Free Option Available", "Rich in Vitamins and Minerals"],
@@ -54,11 +54,11 @@
     "price": "$15",
     "unit": "per kg",
     "minOrder": "500 kg",
-    "image": "/api/placeholder/400/300",
+    "image": "/products/garri.jpg",
     "images": [
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600"
+      "/products/garri.jpg",
+     "/products/garri.jpg",
+      "/products/garri.jpg"
     ],
     "description": "Traditional cassava flakes processed using modern techniques while maintaining authentic taste and nutrition. Our Garri is carefully processed to ensure quality and safety standards.",
     "features": ["Gluten-Free", "Long Shelf Life", "Organic Processing", "Traditional Taste", "High Energy Content", "Easy to Prepare"],
@@ -100,11 +100,11 @@
     "price": "$12",
     "unit": "per carton",
     "minOrder": "100 cartons",
-    "image": "/api/placeholder/400/300",
+    "image":"/products/noodles.jpg",
     "images": [
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600"
+     "/products/noodles.jpg",
+      "/products/noodles.jpg",
+      "/products/noodles.jpg"
     ],
     "description": "Popular instant noodles with various flavors, perfect for quick meals. Made with quality wheat flour and authentic seasoning for consistent taste and satisfaction.",
     "features": ["Quick Cook (3 mins)", "Multiple Flavors", "Affordable", "Convenient Packaging", "Long Shelf Life", "Consistent Quality"],
@@ -146,10 +146,10 @@
     "price": "Varies",
     "unit": "per package",
     "minOrder": "Custom",
-    "image": "/api/placeholder/400/300",
+    "image": "/products/staples&processedfoods.jpg",
     "images": [
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600"
+     "/products/staples&processedfoods.jpg",
+     "/products/staples&processedfoods.jpg"
     ],
     "description": "Wide range of processed foods including flours, cereals, and packaged goods. Customizable packages to meet specific business and retail requirements.",
     "features": ["Variety Pack", "Quality Assured", "Bulk Available", "Custom Orders", "Mixed Selection", "Wholesale Pricing"],
@@ -191,12 +191,12 @@
     "price": "$45",
     "unit": "per kg",
     "minOrder": "50 kg",
-    "image": "/api/placeholder/400/300",
+    "image": "/products/cashewnuts.jpg",
     "images": [
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600"
+    "/products/cashewnuts.jpg",
+      "/products/cashewnuts.jpg",
+      "/products/cashewnuts.jpg",
+      "/products/cashewnuts.jpg"
     ],
     "description": "Premium grade roasted cashew nuts, carefully selected and processed to maintain their natural flavor and nutritional value. Perfect for snacking, cooking, and food manufacturing.",
     "features": ["Grade A Quality", "Rich in Minerals", "Premium Roasting", "Natural Flavor", "High Nutritional Value", "Export Grade"],
@@ -238,11 +238,11 @@
     "price": "$48",
     "unit": "per kg",
     "minOrder": "25 kg",
-    "image": "/api/placeholder/400/300",
+    "image": "/products/cashewkernel.jpg",
     "images": [
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600"
+     "/products/cashewkernel.jpg",
+      "/products/cashewkernel.jpg",
+      "/products/cashewkernel.jpg"
     ],
     "description": "High-quality cashew kernels, perfect for snacking and culinary use. Hand-selected for size and quality, these kernels offer exceptional taste and nutritional benefits.",
     "features": ["Whole Kernels", "Premium Grade", "Rich Flavor", "Protein Rich", "Hand Selected", "Natural Processing"],
@@ -284,10 +284,10 @@
     "price": "$35",
     "unit": "per kg",
     "minOrder": "1000 kg",
-    "image": "/api/placeholder/400/300",
+    "image": "/products/rawcashewnut.jpg",
     "images": [
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600"
+      "/products/rawcashewnut.jpg",
+      "/products/rawcashewnut.jpg"
     ],
     "description": "High-grade raw cashew nuts for processing and manufacturing. Sourced directly from farms and carefully dried for optimal quality and shelf life.",
     "features": ["Unprocessed", "Grade A", "Bulk Available", "Industrial Grade", "Farm Fresh", "Export Quality"],
@@ -329,11 +329,11 @@
     "price": "$40",
     "unit": "per kg",
     "minOrder": "25 kg",
-    "image": "/api/placeholder/400/300",
+    "image": "/products/sheabutter.jpg",
     "images": [
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600"
+      "/products/sheabutter.jpg",
+      "/products/sheabutter.jpg",
+      "/products/sheabutter.jpg"
     ],
     "description": "Pure, natural shea butter for cosmetic and therapeutic applications. Hand-extracted using traditional methods to preserve natural healing properties and rich nutrient content.",
     "features": ["100% Pure", "Unrefined", "Fair Trade", "Moisturizing", "Hand Extracted", "Traditional Methods"],
@@ -375,10 +375,10 @@
     "price": "Market Price",
     "unit": "per ounce",
     "minOrder": "1 ounce",
-    "image": "/api/placeholder/400/300",
+    "image": "/products/gold.jpg",
     "images": [
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600"
+      "/products/gold.jpg",
+      "/products/gold.jpg"
     ],
     "description": "High-grade gold from certified mining operations with ethical sourcing. Investment-grade gold bars and nuggets available for industrial and investment purposes.",
     "features": ["99.9% Pure", "Certified Assay", "Ethical Mining", "Investment Grade", "Traceable Source", "International Standards"],
@@ -420,10 +420,10 @@
     "price": "Quote on Request",
     "unit": "per ton",
     "minOrder": "10 tons",
-    "image": "/api/placeholder/400/300",
+    "image": "/products/lithium.jpg",
     "images": [
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600"
+      "/products/lithium.jpg",
+      "/products/lithium.jpg"
     ],
     "description": "High-grade lithium for battery and industrial applications. Essential mineral for electric vehicle batteries, energy storage systems, and various industrial processes.",
     "features": ["Battery Grade", "High Purity", "Sustainable Mining", "Industrial Use", "EV Battery Ready", "Energy Storage"],
@@ -465,10 +465,10 @@
     "price": "$5",
     "unit": "per kg",
     "minOrder": "1000 kg",
-    "image": "/api/placeholder/400/300",
+    "image": "/products/plasticscraps.jpg",
     "images": [
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600"
+      "/products/plasticscraps.jpg",
+      "/products/plasticscraps.jpg"
     ],
     "description": "Clean, sorted plastic scraps for recycling industry and manufacturing. Environmentally responsible disposal and processing of plastic waste into reusable materials.",
     "features": ["Sorted by Type", "Clean Processing", "Recyclable", "Various Polymer Types", "Eco-Friendly", "Industrial Grade"],
@@ -510,11 +510,11 @@
     "price": "$20",
     "unit": "per kg",
     "minOrder": "10 kg",
-    "image": "/api/placeholder/400/300",
+    "image": "/products/blacksoap.jpg",
     "images": [
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600"
+      "/products/blacksoap.jpg",
+      "/products/blacksoap.jpg",
+      "/products/blacksoap.jpg"
     ],
     "description": "Traditional African black soap made with natural ingredients and herbs. Handcrafted using ancient recipes with plantain skins, palm kernel oil, and natural botanicals.",
     "features": ["100% Natural", "Handmade", "Organic Ingredients", "Skin Friendly", "Traditional Recipe", "Chemical-Free"],
