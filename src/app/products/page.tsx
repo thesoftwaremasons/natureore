@@ -155,15 +155,15 @@ export default function Products() {
                     placeholder="Search premium products..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-12 pr-6 py-4 border border-gray-300/50 rounded-2xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 bg-white/80 backdrop-blur-sm shadow-lg transition-all duration-300 text-lg"
+                    className="w-full pl-12 pr-6 py-4 border border-gray-300/50 rounded-2xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 bg-white/80 text-black backdrop-blur-sm shadow-lg transition-all duration-300 text-lg"
                   />
                 </div>
 
                 {/* Filter Button */}
-                <button className="flex items-center space-x-2 px-6 py-4 bg-white border border-gray-300/50 rounded-2xl hover:bg-emerald-50 hover:border-emerald-300 transition-all duration-300 shadow-lg font-medium">
+                {/* <button className="flex items-center space-x-2 px-6 py-4 bg-white border border-gray-300/50 rounded-2xl hover:bg-emerald-50 hover:border-emerald-300 transition-all duration-300 shadow-lg font-medium">
                   <Filter className="w-5 h-5 text-emerald-600" />
                   <span>Filters</span>
-                </button>
+                </button> */}
               </div>
 
               {/* View Mode Toggle */}

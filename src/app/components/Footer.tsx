@@ -85,7 +85,7 @@ export default function Footer() {
               Quick Links
             </h4>
             <div className="space-y-4">
-              {['Home', 'About Us', 'Products', 'Contact Us', 'Blog'].map((item) => (
+              {['Home', 'About Us', 'Products', 'Contact Us'].map((item) => (
                 <Link 
                   key={item}
                   href={`/${item.toLowerCase().replace(/\s/g, '')}`} 

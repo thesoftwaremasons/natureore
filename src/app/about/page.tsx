@@ -28,26 +28,26 @@ export default function About() {
     }
   ]
 
-  const team = [
-    {
-      name: 'Ayolanre Johnson',
-      role: 'Chief Executive Officer',
-      image: '/api/placeholder/300/300',
-      bio: 'With over 15 years in international trade, Ayolanre leads our vision of connecting continents through quality exports.'
-    },
-    {
-      name: 'Samuel Adebayo',
-      role: 'Head of Operations',
-      image: '/api/placeholder/300/300',
-      bio: 'Samuel ensures seamless logistics and supply chain management across all our export operations.'
-    },
-    {
-      name: 'Grace Okafor',
-      role: 'Quality Assurance Manager',
-      image: '/api/placeholder/300/300',
-      bio: 'Grace maintains our high standards through rigorous quality control and international compliance protocols.'
-    }
-  ]
+  // const team = [
+  //   {
+  //     name: 'Ayolanre Johnson',
+  //     role: 'Chief Executive Officer',
+  //     image: '/api/placeholder/300/300',
+  //     bio: 'With over 15 years in international trade, Ayolanre leads our vision of connecting continents through quality exports.'
+  //   },
+  //   {
+  //     name: 'Samuel Adebayo',
+  //     role: 'Head of Operations',
+  //     image: '/api/placeholder/300/300',
+  //     bio: 'Samuel ensures seamless logistics and supply chain management across all our export operations.'
+  //   },
+  //   {
+  //     name: 'Grace Okafor',
+  //     role: 'Quality Assurance Manager',
+  //     image: '/api/placeholder/300/300',
+  //     bio: 'Grace maintains our high standards through rigorous quality control and international compliance protocols.'
+  //   }
+  // ]
 
   return (
     <div className="pt-20 bg-emerald-700 text-white">
@@ -152,7 +152,7 @@ export default function About() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Meet Our Team</h2>
@@ -179,7 +179,7 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 gradient-bg text-white">

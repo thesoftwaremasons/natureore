@@ -1,15 +1,16 @@
 // components/About.tsx
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, Globe, Leaf, Award, TrendingUp } from 'lucide-react'
+// import { ArrowRight, Globe, Leaf, Award, TrendingUp } from 'lucide-react'
+import { ArrowRight} from 'lucide-react'
 
 export default function AboutUs() {
-  const stats = [
-    { number: "500+", label: "Global Clients", icon: Globe },
-    { number: "25+", label: "Countries Served", icon: TrendingUp },
-    { number: "100%", label: "Sustainable", icon: Leaf },
-    { number: "10+", label: "Years Experience", icon: Award },
-  ]
+  // const stats = [
+  //   { number: "500+", label: "Global Clients", icon: Globe },
+  //   { number: "25+", label: "Countries Served", icon: TrendingUp },
+  //   { number: "100%", label: "Sustainable", icon: Leaf },
+  //   { number: "10+", label: "Years Experience", icon: Award },
+  // ]
 
   return (
     <section className="py-32 gradient-bg-alt relative overflow-hidden">
@@ -62,7 +63,7 @@ export default function AboutUs() {
             </div>
 
             {/* Stats grid */}
-            <div className="grid grid-cols-2 gap-6 mb-12">
+            {/* <div className="grid grid-cols-2 gap-6 mb-12">
               {stats.map((stat, index) => (
                 <div key={index} className="glass-card p-6 group hover:scale-105 transition-all duration-300">
                   <div className="flex items-center space-x-4">
@@ -77,7 +78,7 @@ export default function AboutUs() {
                 </div>
               ))}
             </div>
-            
+             */}
             <Link href="/about" className="btn-primary group">
               <span>Discover Our Story</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

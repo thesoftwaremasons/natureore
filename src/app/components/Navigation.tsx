@@ -147,9 +147,9 @@ export default function Navigation({ mobile = false, isScrolled = false }: Navig
 
   return (
     <nav className="flex space-x-8 items-center">
-      <Link href="/" className={`${linkStyle} font-medium transition-all duration-300 hover:scale-105`}>
+      {/* <Link href="/" className={`${linkStyle} font-medium transition-all duration-300 hover:scale-105`}>
         Home
-      </Link>
+      </Link> */}
       <Link href="/about" className={`${linkStyle} font-medium transition-all duration-300 hover:scale-105`}>
         About
       </Link>

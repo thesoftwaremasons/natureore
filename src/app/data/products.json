@@ -238,11 +238,11 @@
     "price": "$48",
     "unit": "per kg",
     "minOrder": "25 kg",
-    "image": "/products/cashewkernel.jpg",
+    "image": "/products/cashew.png",
     "images": [
-     "/products/cashewkernel.jpg",
-      "/products/cashewkernel.jpg",
-      "/products/cashewkernel.jpg"
+     "/products/cashew.png",
+      "/products/cashew.png",
+      "/products/cashew.png"
     ],
     "description": "High-quality cashew kernels, perfect for snacking and culinary use. Hand-selected for size and quality, these kernels offer exceptional taste and nutritional benefits.",
     "features": ["Whole Kernels", "Premium Grade", "Rich Flavor", "Protein Rich", "Hand Selected", "Natural Processing"],
@@ -366,6 +366,51 @@
       "Healing properties for skin conditions",
       "Rich in vitamins and fatty acids"
     ]
+  },{
+    "id": "9",
+    "name": "Soy Bean",
+    "category": "cash-crops",
+    "categoryName": "Cash Crops & Natural Extracts",
+    "price": "$40",
+    "unit": "per kg",
+    "minOrder": "25 kg",
+    "image": "/products/soybean.jpg",
+    "images": [
+      "/products/soybean.jpg",
+      "/products/soybean.jpg",
+      "/products/soybean.jpg"
+    ],
+    "description": "Sustainably grown and 100% pure, our soybeans are ideal for food processing, oil extraction, and plant-based nutrition.",
+    "features": ["100% Pure", "Unrefined", "Fair Trade", "Moisturizing", "Hand Extracted", "Traditional Methods"],
+    "availability": "In Stock",
+    "rating": 4.8,
+    "reviews": 28,
+    "badge": "Fair Trade",
+    "specifications": {
+      "Product Type": "Raw Unrefined Shea Butter",
+      "Origin": "Northern Nigeria",
+      "Grade": "Grade A",
+      "Packaging": "25kg containers",
+      "Melting Point": "32-38°C",
+      "Acid Value": "< 2.0",
+      "Storage": "Cool, dry place",
+      "Certifications": "Fair Trade, Organic"
+    },
+    "nutritionalInfo": {
+      "Oleic Acid": "40-60%",
+      "Stearic Acid": "20-50%",
+      "Linoleic Acid": "3-11%",
+      "Palmitic Acid": "2-9%",
+      "Vitamins": "A, E, F",
+      "Cinnamic Esters": "Natural UV protection"
+    },
+    "benefits": [
+      "Natural moisturizer and skin protector",
+      "Anti-inflammatory properties",
+      "Natural UV protection",
+      "Healing properties for skin conditions",
+      "Rich in vitamins and fatty acids"
+    ]
   },
   {
     "id": "16",
@@ -375,10 +420,10 @@
     "price": "Market Price",
     "unit": "per ounce",
     "minOrder": "1 ounce",
-    "image": "/products/gold.jpg",
+    "image": "/products/rawgold.jpg",
     "images": [
-      "/products/gold.jpg",
-      "/products/gold.jpg"
+      "/products/rawgold.jpg",
+      "/products/rawgold.jpg"
     ],
     "description": "High-grade gold from certified mining operations with ethical sourcing. Investment-grade gold bars and nuggets available for industrial and investment purposes.",
     "features": ["99.9% Pure", "Certified Assay", "Ethical Mining", "Investment Grade", "Traceable Source", "International Standards"],
@@ -426,6 +471,97 @@
       "/products/lithium.jpg"
     ],
     "description": "High-grade lithium for battery and industrial applications. Essential mineral for electric vehicle batteries, energy storage systems, and various industrial processes.",
+    "features": ["Battery Grade", "High Purity", "Sustainable Mining", "Industrial Use", "EV Battery Ready", "Energy Storage"],
+    "availability": "Available",
+    "rating": 4.9,
+    "reviews": 12,
+    "badge": "Industrial Grade",
+    "specifications": {
+      "Product Type": "Lithium Carbonate/Hydroxide",
+      "Origin": "Nigeria",
+      "Grade": "Battery Grade (>99.5%)",
+      "Packaging": "1-ton bulk bags",
+      "Particle Size": "D50: 10-20 μm",
+      "Moisture Content": "< 0.5%",
+      "Storage": "Dry, controlled environment",
+      "Certifications": "ISO 9001, Battery Grade"
+    },
+    "nutritionalInfo": {
+      "Li2CO3 Content": ">99.5%",
+      "Sulfate (SO4)": "<200 ppm",
+      "Chloride (Cl)": "<50 ppm",
+      "Iron (Fe)": "<10 ppm",
+      "Calcium (Ca)": "<400 ppm",
+      "Magnesium (Mg)": "<300 ppm"
+    },
+    "benefits": [
+      "Essential for EV battery production",
+      "High energy density applications",
+      "Long cycle life in batteries",
+      "Critical mineral for green energy",
+      "Growing market demand"
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Gypsum",
+    "category": "minerals",
+    "categoryName": "Solid-State Minerals",
+    "price": "Quote on Request",
+    "unit": "per ton",
+    "minOrder": "10 tons",
+    "image": "/products/Gypsum.jpg",
+    "images": [
+      "/products/Gypsum.jpg",
+      "/products/Gypsum.jpg"
+    ],
+    "description": "High-purity gypsum sourced sustainably for industrial use, including cement production, agriculture, and construction.",
+    "features": ["Battery Grade", "High Purity", "Sustainable Mining", "Industrial Use", "EV Battery Ready", "Energy Storage"],
+    "availability": "Available",
+    "rating": 4.9,
+    "reviews": 12,
+    "badge": "Industrial Grade",
+    "specifications": {
+      "Product Type": "Lithium Carbonate/Hydroxide",
+      "Origin": "Nigeria",
+      "Grade": "Battery Grade (>99.5%)",
+      "Packaging": "1-ton bulk bags",
+      "Particle Size": "D50: 10-20 μm",
+      "Moisture Content": "< 0.5%",
+      "Storage": "Dry, controlled environment",
+      "Certifications": "ISO 9001, Battery Grade"
+    },
+    "nutritionalInfo": {
+      "Li2CO3 Content": ">99.5%",
+      "Sulfate (SO4)": "<200 ppm",
+      "Chloride (Cl)": "<50 ppm",
+      "Iron (Fe)": "<10 ppm",
+      "Calcium (Ca)": "<400 ppm",
+      "Magnesium (Mg)": "<300 ppm"
+    },
+    "benefits": [
+      "Essential for EV battery production",
+      "High energy density applications",
+      "Long cycle life in batteries",
+      "Critical mineral for green energy",
+      "Growing market demand"
+    ]
+  },
+  
+  {
+    "id": "19",
+    "name": "Iron Ore",
+    "category": "minerals",
+    "categoryName": "Solid-State Minerals",
+    "price": "Quote on Request",
+    "unit": "per ton",
+    "minOrder": "10 tons",
+    "image": "/products/ironore.webp",
+    "images": [
+      "/products/ironore.webp",
+      "/products/ironore.webp"
+    ],
+    "description": "Iron Ore (Industrial Grade) High-purity iron ore sourced through sustainable mining, ideal for steel production, construction, and heavy manufacturing. Available from 10 tons and packaged for global logistics.",
     "features": ["Battery Grade", "High Purity", "Sustainable Mining", "Industrial Use", "EV Battery Ready", "Energy Storage"],
     "availability": "Available",
     "rating": 4.9,
@@ -518,6 +654,98 @@
     ],
     "description": "Traditional African black soap made with natural ingredients and herbs. Handcrafted using ancient recipes with plantain skins, palm kernel oil, and natural botanicals.",
     "features": ["100% Natural", "Handmade", "Organic Ingredients", "Skin Friendly", "Traditional Recipe", "Chemical-Free"],
+    "availability": "In Stock",
+    "rating": 4.7,
+    "reviews": 35,
+    "badge": "Handmade",
+    "specifications": {
+      "Product Type": "Traditional Black Soap",
+      "Origin": "West Africa",
+      "Main Ingredients": "Plantain skins, Palm oil, Shea butter",
+      "Packaging": "1kg blocks, 5kg bulk",
+      "pH Level": "9.5-10.5",
+      "Shelf Life": "36 months",
+      "Storage": "Cool, dry place",
+      "Certifications": "Organic, Handmade"
+    },
+    "nutritionalInfo": {
+      "Palm Kernel Oil": "30-40%",
+      "Plantain Ash": "20-30%",
+      "Shea Butter": "15-25%",
+      "Cocoa Pod Ash": "10-15%",
+      "Natural Glycerin": "5-10%",
+      "Botanical Extracts": "2-5%"
+    },
+    "benefits": [
+      "Natural antibacterial properties",
+      "Gentle on sensitive skin",
+      "Rich in vitamins and antioxidants",
+      "Moisturizing and cleansing",
+      "Suitable for all skin types"
+    ]
+  },
+  {
+    "id": "22",
+    "name": "Animal feeds",
+    "category": "specialty",
+    "categoryName": "Specialty Products",
+    "price": "$20",
+    "unit": "per kg",
+    "minOrder": "10 kg",
+    "image": "/products/livestock-feed-production.webp",
+    "images": [
+      "/products/livestock-feed-production.webp",
+      "/products/livestock-feed-production.webp",
+      "/products/livestock-feed-production.webp"
+    ],
+    "description": "Locally crafted using organic ingredients, our animal feeds support healthy livestock growth and improved yield. Perfect for sustainable farming practices.",
+    "features": ["100% Natural", "Handmade", "Organic Ingredients", "Skin Friendly", "Traditional Recipe", "Chemical-Free"],
+    "availability": "In Stock",
+    "rating": 4.7,
+    "reviews": 35,
+    "badge": "Handmade",
+    "specifications": {
+      "Product Type": "Traditional Black Soap",
+      "Origin": "West Africa",
+      "Main Ingredients": "Plantain skins, Palm oil, Shea butter",
+      "Packaging": "1kg blocks, 5kg bulk",
+      "pH Level": "9.5-10.5",
+      "Shelf Life": "36 months",
+      "Storage": "Cool, dry place",
+      "Certifications": "Organic, Handmade"
+    },
+    "nutritionalInfo": {
+      "Palm Kernel Oil": "30-40%",
+      "Plantain Ash": "20-30%",
+      "Shea Butter": "15-25%",
+      "Cocoa Pod Ash": "10-15%",
+      "Natural Glycerin": "5-10%",
+      "Botanical Extracts": "2-5%"
+    },
+    "benefits": [
+      "Natural antibacterial properties",
+      "Gentle on sensitive skin",
+      "Rich in vitamins and antioxidants",
+      "Moisturizing and cleansing",
+      "Suitable for all skin types"
+    ]
+  },
+  {
+    "id": "23",
+    "name": "Children Clothing",
+    "category": "specialty",
+    "categoryName": "Specialty Products",
+    "price": "$20",
+    "unit": "per kg",
+    "minOrder": "10 kg",
+    "image": "/products/clothing.jpg",
+    "images": [
+      "/products/clothing.jpg",
+      "/products/clothing.jpg",
+      "/products/clothing.jpg"
+    ],
+    "description": "Crafted from 100% natural materials, our handmade children’s clothing is gentle on delicate skin and designed with care. Ideal for eco-conscious families seeking comfort, style, and tradition.",
+    "features": ["100% Natural", "Handmade",  "Skin Friendly",  "Chemical-Free"],
     "availability": "In Stock",
     "rating": 4.7,
     "reviews": 35,
