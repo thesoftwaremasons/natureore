@@ -1,12 +1,13 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ChevronDown, ChevronRight, Package, Leaf, Gem, Star } from 'lucide-react'
 
 interface NavigationProps {
   mobile?: boolean
   isScrolled?: boolean
+  onClose?: () => void // Added prop to handle closing from parent
 }
 
 const productCategories = {
@@ -63,10 +64,33 @@ const productCategories = {
   }
 }
 
-export default function Navigation({ mobile = false, isScrolled = false }: NavigationProps) {
+export default function Navigation({ mobile = false, isScrolled = false, onClose }: NavigationProps) {
   const [active, setActive] = useState<string | null>(null)
   const [isOpen, setIsOpen] = useState(false)
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
+  const mobileNavRef = useRef<HTMLDivElement>(null)
+
+  // Handle outside clicks for mobile navigation
+  useEffect(() => {
+    if (!mobile) return
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (mobileNavRef.current && !mobileNavRef.current.contains(event.target as Node)) {
+        // Close all expanded menus
+        setActive(null)
+        // Call parent's onClose if provided
+        onClose?.()
+      }
+    }
+
+    // Add event listener
+    document.addEventListener('mousedown', handleClickOutside)
+    
+    // Cleanup
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [mobile, onClose])
 
   const handleMouseEnter = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current)
@@ -83,20 +107,29 @@ export default function Navigation({ mobile = false, isScrolled = false }: Navig
     setActive(prev => (prev === key ? null : key))
   }
 
+  // Handle link clicks in mobile to close menu
+  const handleLinkClick = () => {
+    if (mobile) {
+      setActive(null)
+      onClose?.()
+    }
+  }
+
   const linkStyle = mobile || isScrolled 
     ? "text-gray-800 hover:text-emerald-600" 
     : "text-white hover:text-emerald-200"
 
   if (mobile) {
     return (
-      <nav className="space-y-1 px-4">
-        {['Home', 'About', 'Contact'].map((item) => (
+      <nav ref={mobileNavRef} className="space-y-1 px-4">
+        {['About'].map((item) => (
           <Link
             key={item}
             href={`/${item.toLowerCase().replace(/\s/g, '')}`}
+            onClick={handleLinkClick}
             className="block py-3 px-4 text-gray-800 hover:text-emerald-600 hover:bg-emerald-50 rounded-xl transition-all duration-300 font-medium"
           >
-            {item}
+           About Us
           </Link>
         ))}
 
@@ -129,6 +162,7 @@ export default function Navigation({ mobile = false, isScrolled = false }: Navig
                         <Link
                           key={item.href}
                           href={item.href}
+                          onClick={handleLinkClick}
                           className="block py-2 px-3 text-xs text-gray-600 hover:text-emerald-600 hover:bg-emerald-50 rounded transition-all duration-300"
                         >
                           {item.name}
@@ -147,9 +181,6 @@ export default function Navigation({ mobile = false, isScrolled = false }: Navig
 
   return (
     <nav className="flex space-x-8 items-center">
-      {/* <Link href="/" className={`${linkStyle} font-medium transition-all duration-300 hover:scale-105`}>
-        Home
-      </Link> */}
       <Link href="/about" className={`${linkStyle} font-medium transition-all duration-300 hover:scale-105`}>
         About
       </Link>
@@ -217,10 +248,6 @@ export default function Navigation({ mobile = false, isScrolled = false }: Navig
           </div>
         )}
       </div>
-
-      {/* <Link href="/contact" className={`${linkStyle} font-medium transition-all duration-300 hover:scale-105`}>
-        Contact
-      </Link> */}
     </nav>
   )
 }

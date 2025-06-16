@@ -18,6 +18,11 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Close mobile menu handler
+  const closeMobileMenu = () => {
+    setIsMenuOpen(false)
+  }
+
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-500 ${
       isScrolled 
@@ -89,13 +94,21 @@ export default function Header() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="lg:hidden py-6 border-t border-gray-200/20 bg-white/95 backdrop-blur-xl rounded-b-2xl mt-2 shadow-2xl">
-            <Navigation mobile isScrolled={true} />
+            <Navigation 
+              mobile 
+              onClose={closeMobileMenu}  
+              isScrolled={true} 
+            />
             <div className="mt-6 px-4">
               <div className="flex items-center space-x-2 mb-4 text-emerald-600">
                 <Phone className="w-4 h-4" />
                 <span className="text-sm font-medium">+234 (0) 81 873 577 92</span>
               </div>
-              <Link href="/contact" className="btn-primary block text-center w-full">
+              <Link 
+                href="/contact" 
+                className="btn-primary block text-center w-full"
+                onClick={closeMobileMenu} // Close menu when contact link is clicked
+              >
                 Contact Now
               </Link>
             </div>
