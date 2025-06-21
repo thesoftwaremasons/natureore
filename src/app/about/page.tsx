@@ -90,7 +90,7 @@ export default function About() {
             </div>
             <div className="relative">
               <Image
-                src="/work-boots-889816_640.jpg"
+                src="/aboutus.jpg"
                 alt="Natureore Logistics facility"
                 width={600}
                 height={400}

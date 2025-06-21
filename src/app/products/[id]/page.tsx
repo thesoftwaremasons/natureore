@@ -137,7 +137,7 @@ export default function ProductPage() {
   const categoryInfo = categoriesData.find(cat => cat.id === product.category) as Category | undefined
 
   return (
-    <div className="pt-20 bg-emerald-700 text-white">
+    <div className="pt-30 bg-emerald-700 text-white">
       {/* Breadcrumb */}
       <div className="bg-gray-50 py-4">
         <div className="container mx-auto px-4">

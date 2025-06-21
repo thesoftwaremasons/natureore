@@ -67,6 +67,7 @@ const productCategories = {
 export default function Navigation({ mobile = false, isScrolled = false, onClose }: NavigationProps) {
   const [active, setActive] = useState<string | null>(null)
   const [isOpen, setIsOpen] = useState(false)
+  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set()) // New state for category expansion
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
   const mobileNavRef = useRef<HTMLDivElement>(null)
 
@@ -78,6 +79,7 @@ export default function Navigation({ mobile = false, isScrolled = false, onClose
       if (mobileNavRef.current && !mobileNavRef.current.contains(event.target as Node)) {
         // Close all expanded menus
         setActive(null)
+        setExpandedCategories(new Set())
         // Call parent's onClose if provided
         onClose?.()
       }
@@ -107,10 +109,24 @@ export default function Navigation({ mobile = false, isScrolled = false, onClose
     setActive(prev => (prev === key ? null : key))
   }
 
+  // New function to handle category expansion
+  const toggleCategory = (categoryKey: string) => {
+    setExpandedCategories(prev => {
+      const newSet = new Set(prev)
+      if (newSet.has(categoryKey)) {
+        newSet.delete(categoryKey)
+      } else {
+        newSet.add(categoryKey)
+      }
+      return newSet
+    })
+  }
+
   // Handle link clicks in mobile to close menu
   const handleLinkClick = () => {
     if (mobile) {
       setActive(null)
+      setExpandedCategories(new Set())
       onClose?.()
     }
   }
@@ -147,16 +163,16 @@ export default function Navigation({ mobile = false, isScrolled = false, onClose
               {Object.entries(productCategories).map(([key, cat]) => (
                 <div key={key}>
                   <button
-                    onClick={() => toggle(key)}
+                    onClick={() => toggleCategory(key)}
                     className="flex justify-between w-full py-2 px-4 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-300 text-sm"
                   >
                     <div className="flex items-center space-x-2">
                       <cat.icon className="w-4 h-4" />
                       <span>{cat.title}</span>
                     </div>
-                    <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${active === key ? 'rotate-90' : ''}`} />
+                    <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${expandedCategories.has(key) ? 'rotate-90' : ''}`} />
                   </button>
-                  {active === key && (
+                  {expandedCategories.has(key) && (
                     <div className="ml-6 mt-1 space-y-1">
                       {cat.items.map((item) => (
                         <Link
