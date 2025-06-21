@@ -7,12 +7,12 @@
     "price": "$25",
     "unit": "per kg",
     "minOrder": "100 kg",
-    "image": "/products/pap.jpg",
+    "image": "/products/pap_400rf-8k-edit-LARGE.png",
     "images": [
-     "/products/pap.jpg",
-      "/products/pap.jpg",
-     "/products/pap.jpg",
-    "/products/pap.jpg"
+     "/products/pap_400rf-8k-edit-LARGE.png",
+      "/products/pap_400rf-8k-edit-LARGE.png",
+     "/products/pap_400rf-8k-edit-LARGE.png",
+    "/products/pap_400rf-8k-edit-LARGE.png"
     ],
     "description": "Premium quality custard powder made from the finest ingredients. Our PAP is rich in nutrients and provides excellent nutritional value. Perfect for breakfast, desserts, and various culinary applications.",
     "features": ["High Protein Content", "Natural Ingredients", "Export Quality", "Long Shelf Life", "Gluten-Free Option Available", "Rich in Vitamins and Minerals"],
@@ -100,11 +100,11 @@
     "price": "$12",
     "unit": "per carton",
     "minOrder": "100 cartons",
-    "image":"/products/noodles.jpg",
+    "image":"/products/1628080312_indomie_super_pack.jpg",
     "images": [
-     "/products/noodles.jpg",
-      "/products/noodles.jpg",
-      "/products/noodles.jpg"
+     "/products/1628080312_indomie_super_pack.jpg",
+      "/products/1628080312_indomie_super_pack.jpg",
+      "/products/1628080312_indomie_super_pack.jpg"
     ],
     "description": "Popular instant noodles with various flavors, perfect for quick meals. Made with quality wheat flour and authentic seasoning for consistent taste and satisfaction.",
     "features": ["Quick Cook (3 mins)", "Multiple Flavors", "Affordable", "Convenient Packaging", "Long Shelf Life", "Consistent Quality"],

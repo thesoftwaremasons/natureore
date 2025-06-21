@@ -154,7 +154,7 @@ export default function Navigation({ mobile = false, isScrolled = false, onClose
             onClick={() => toggle('products')}
             className="flex justify-between w-full py-3 px-4 text-gray-800 hover:text-emerald-600 hover:bg-emerald-50 rounded-xl transition-all duration-300 font-medium"
           >
-            Products
+            Our Products
             <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${active === 'products' ? 'rotate-180' : ''}`} />
           </button>
 
@@ -198,7 +198,7 @@ export default function Navigation({ mobile = false, isScrolled = false, onClose
   return (
     <nav className="flex space-x-8 items-center">
       <Link href="/about" className={`${linkStyle} font-medium transition-all duration-300 hover:scale-105`}>
-        About
+        About Us
       </Link>
 
       <div
@@ -207,7 +207,7 @@ export default function Navigation({ mobile = false, isScrolled = false, onClose
         onMouseLeave={handleMouseLeave}
       >
         <button className={`flex items-center gap-2 ${linkStyle} font-medium transition-all duration-300 hover:scale-105`}>
-          Products
+          Our Products
           <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
         </button>
 

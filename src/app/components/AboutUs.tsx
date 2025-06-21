@@ -27,7 +27,7 @@ export default function AboutUs() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-emerald-600 to-emerald-400 rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity" />
                 <Image
                   src="/7.jpg"
-                  alt="Natureore Logistics Team"
+                  alt="Natureore Nigeria limited Team"
                   width={600}
                   height={400}
                   className="relative rounded-3xl premium-shadow hover:scale-105 transition-transform duration-700"
@@ -45,7 +45,7 @@ export default function AboutUs() {
             <div className="mb-8">
               <div className="inline-flex items-center space-x-2 bg-emerald-900/10 backdrop-blur-sm px-6 py-3 rounded-full border border-emerald-900/20 mb-6">
                 <div className="w-2 h-2 bg-emerald-600 rounded-full" />
-                <span className="premium-text-gradient font-semibold text-lg">Natureore Logistics</span>
+                <span className="premium-text-gradient font-semibold text-lg">Natureore Nigeria limited</span>
               </div>
               
               <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
@@ -54,7 +54,7 @@ export default function AboutUs() {
               </h2>
               
               <p className="text-gray-700 text-xl leading-relaxed mb-12 font-light">
-                Your Gateway to Global Trade and Prosperity. At Natureore Logistics Limited, 
+                Your Gateway to Global Trade and Prosperity. At Natureore Nigeria limited Limited, 
                 we don&#39;t just trade—we connect continents, cultivate opportunities, and drive 
                 sustainable growth. As a premier international export and import company, we 
                 specialize in agricultural products and solid-state mineral mining across Africa, 

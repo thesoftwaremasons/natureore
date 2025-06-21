@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Natureore Logistics - Premium Agricultural Exports',
+  title: 'Natureore Nigeria limited - Premium Agricultural Exports',
   description: 'Discover premium quality Agriculture products from Natureore logistics, the leading exporter in Nigeria.',
 }
 

@@ -46,7 +46,7 @@ export default function Header() {
                     isScrolled ? 'text-emerald-600' : 'text-emerald-200'
                   )}
                 >
-                  Logistics Limited
+                  Nigeria limited Limited
                 </span>
                 <div className={clsx('h-3 w-px', isScrolled ? 'bg-emerald-300' : 'bg-emerald-300/50')} />
                 <span
@@ -55,7 +55,7 @@ export default function Header() {
                     isScrolled ? 'text-gray-500' : 'text-white/70'
                   )}
                 >
-                  AFRICA TO WORLD
+                  AFRICA TO THE WORLD
                 </span>
               </div>
             </div>
@@ -111,7 +111,7 @@ function Logo({ isScrolled }: { isScrolled: boolean }) {
           src="/natureore.png"
           width={50}
           height={50}
-          alt="Natureore Logistics"
+          alt="Natureore Nigeria limited"
           className="rounded-xl transition-transform group-hover:scale-110"
         />
       </div>
@@ -137,16 +137,16 @@ function DesktopContact({ isScrolled }: { isScrolled: boolean }) {
             isScrolled ? 'bg-emerald-100 text-emerald-600' : 'bg-emerald-500/20 text-emerald-200'
           )}
         >
-          <Phone className="w-4 h-4" />
+          {/* <Phone className="w-4 h-4" /> */}
         </div>
-        <div className="flex flex-col">
+        {/* <div className="flex flex-col">
           <span className={clsx('text-xs font-medium', isScrolled ? 'text-gray-500' : 'text-white/70')}>
             Call Us Now
           </span>
           <span className={clsx('text-sm font-bold', isScrolled ? 'text-gray-900' : 'text-white')}>
             +234 (0) 81 873 577 92
           </span>
-        </div>
+        </div> */}
       </div>
       <Link href="/contact" className="btn-primary relative overflow-hidden group">
         <span className="relative z-10">Contact Now</span>
@@ -163,13 +163,13 @@ function MobileNav({ close }: { close: () => void }) {
       <Navigation mobile isScrolled onClose={close} />
       <div className="mt-6 px-4 space-y-4">
         <div className="flex items-center space-x-3">
-          <div className="p-2 rounded-lg bg-emerald-100 text-emerald-600">
+          {/* <div className="p-2 rounded-lg bg-emerald-100 text-emerald-600">
             <Phone className="w-4 h-4" />
           </div>
           <div className="flex flex-col">
             <span className="text-xs text-gray-500 font-medium">Call Us Now</span>
             <span className="text-sm font-bold text-gray-900">+234 (0) 81 873 577 92</span>
-          </div>
+          </div> */}
         </div>
         <Link href="/contact" className="btn-primary block text-center w-full relative overflow-hidden group" onClick={close}>
           <span className="relative z-10">Contact Now</span>

@@ -17,7 +17,7 @@ export default function CTA() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <div className="flex items-center space-x-2">
               <Phone className="w-5 h-5" />
-              <span>+234 (0) 123 456 7890</span>
+              <span>+234 (0) 818 735 7792</span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="w-5 h-5" />

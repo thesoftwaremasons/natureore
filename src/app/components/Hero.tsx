@@ -13,7 +13,7 @@ export default function Hero() {
       subtitle: "Premium Global Trade Excellence",
       description: "Experience world-class agricultural exports and mining solutions from Africa's finest producers",
       image: "5.jpg",
-      accent: "Natureore Logistics"
+      accent: "Natureore Nigeria limited"
     },
     {
       title: "Premium Exports, Trusted Consulting",
@@ -75,10 +75,10 @@ export default function Hero() {
           <div className="absolute inset-0 z-20 flex items-center justify-center">
             <div className="text-center text-white max-w-6xl px-6">
               <div className="mb-6 animate-fade-in-up">
-                <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full border border-white/20">
+                {/* <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full border border-white/20">
                   <Sparkles className="w-4 h-4 text-emerald-300" />
                   <span className="text-emerald-200 text-lg font-medium">{slide.accent}</span>
-                </div>
+                </div> */}
               </div>
               
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 animate-fade-in-up animation-delay-200 text-shadow-lg leading-tight">

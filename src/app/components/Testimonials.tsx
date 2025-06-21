@@ -26,7 +26,7 @@ export default function Testimonials() {
       location: 'Mumbai, India',
       image: '/api/placeholder/120/120',
       rating: 5,
-      content: 'Natureore logistics provided us with top-quality Garri and Processed Yam Flour for our food business. The products were rich in taste, and the packaging was secure for export. Their expert trade advisory services helped us expand our business overseas.',
+      content: 'Natureore Nigeria Limited provided us with top-quality Garri and Processed Yam Flour for our food business. The products were rich in taste, and the packaging was secure for export. Their expert trade advisory services helped us expand our business overseas.',
       highlight: 'Rich taste and secure packaging'
     },
     {
@@ -36,7 +36,7 @@ export default function Testimonials() {
       location: 'Shanghai, China',
       image: '/api/placeholder/120/120',
       rating: 5,
-      content: 'We ordered Black Soap and African Children\'s Clothing in bulk, and the transaction was smooth from start to finish. The quality of the clothing was outstanding, and the Black Soap was 100% natural and well-packaged. Natureore logistics is a reliable trade partner.',
+      content: 'We ordered Black Soap and African Children\'s Clothing in bulk, and the transaction was smooth from start to finish. The quality of the clothing was outstanding, and the Black Soap was 100% natural and well-packaged. Natureore Nigeria Limited is a reliable trade partner.',
       highlight: '100% natural products and reliability'
     }
   ]
@@ -83,7 +83,7 @@ export default function Testimonials() {
           </h2>
           
           <p className="text-emerald-100 text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            Discover why businesses worldwide trust Natureore Logistics for their premium export needs.
+            Discover why businesses worldwide trust Natureore Nigeria limited for their premium export needs.
           </p>
         </div>
 

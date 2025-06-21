@@ -77,7 +77,7 @@ import {
           <div className="text-center mb-20 animate-fade-in-up">
             <div className="inline-flex items-center space-x-2 bg-emerald-900/10 backdrop-blur-sm px-8 py-4 rounded-full border border-emerald-900/20 mb-8">
               <Sparkles className="w-5 h-5 text-emerald-600" />
-              <span className="premium-text-gradient font-semibold text-xl">Natureore Logistics</span>
+              <span className="premium-text-gradient font-semibold text-xl">Natureore Nigeria limited</span>
             </div>
             
             <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
