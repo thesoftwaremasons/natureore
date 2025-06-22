@@ -13,7 +13,7 @@ export default function Hero() {
       subtitle: "Premium Global Trade Excellence",
       description: "Experience world-class agricultural exports and mining solutions from Africa's finest producers",
       image: "5.jpg",
-      accent: "Natureore Nigeria limited"
+      accent: "Natureore "
     },
     {
       title: "Premium Exports, Trusted Consulting",

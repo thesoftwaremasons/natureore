@@ -513,7 +513,7 @@ export default function ProductPage() {
                       <div>
                         {relatedProduct.price !== "Market Price" && relatedProduct.price !== "Quote on Request" && relatedProduct.price !== "Varies" ? (
                           <>
-                            <span className="text-green-600 font-semibold text-lg">{relatedProduct.price}</span>
+                            {/* <span className="text-green-600 font-semibold text-lg">{relatedProduct.price}</span> */}
                             <span className="text-gray-500 text-sm ml-1">{relatedProduct.unit}</span>
                           </>
                         ) : (

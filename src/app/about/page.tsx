@@ -55,7 +55,7 @@ export default function About() {
       <section className="py-20 bg-emerald-700 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-6">About Natureore Nigeria limited</h1>
+            <h1 className="text-5xl font-bold mb-6">About Natureore</h1>
             <p className="text-xl opacity-90">
               Your trusted partner in global trade, connecting continents and cultivating prosperity 
               through premium African exports and expert consulting services.
@@ -73,11 +73,11 @@ export default function About() {
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
                   Founded with a vision to bridge the gap between African producers and global markets, 
-                  Natureore Nigeria limited Limited has grown into a leading export company specializing in 
+                  Natureore Nigeria Limited has grown into a leading export company specializing in 
                   premium agricultural products and solid-state minerals.
                 </p>
                 <p>
-                  Our journey began with a simple belief: Africa &apos;s rich natural resources deserve to 
+                  Our journey began with a simple belief; Africa&apos;s rich natural resources deserve to 
                   reach the world &apos;s finest markets. Today, we work with hundreds of local farmers and 
                   producers, ensuring fair trade practices while delivering exceptional quality to our 
                   international clients.
@@ -91,7 +91,7 @@ export default function About() {
             <div className="relative">
               <Image
                 src="/aboutus.jpg"
-                alt="Natureore Nigeria limited facility"
+                alt="Natureore Nigeria Limited facility"
                 width={600}
                 height={400}
                 className="rounded-2xl shadow-lg"

@@ -39,16 +39,16 @@ export default function Header() {
               >
                 Natureore
               </span>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-1">
                 <span
                   className={clsx(
                     'text-sm font-medium',
                     isScrolled ? 'text-emerald-600' : 'text-emerald-200'
                   )}
                 >
-                  Nigeria limited Limited
+                
                 </span>
-                <div className={clsx('h-3 w-px', isScrolled ? 'bg-emerald-300' : 'bg-emerald-300/50')} />
+                {/* <div className={clsx('h-3 w-px', isScrolled ? 'bg-emerald-300' : 'bg-emerald-300/50')} /> */}
                 <span
                   className={clsx(
                     'text-xs font-medium tracking-wide',

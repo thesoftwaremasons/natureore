@@ -27,7 +27,7 @@ export default function AboutUs() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-emerald-600 to-emerald-400 rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity" />
                 <Image
                   src="/7.jpg"
-                  alt="Natureore Nigeria limited Team"
+                  alt="Natureore Nigeria Limited Team"
                   width={600}
                   height={400}
                   className="relative rounded-3xl premium-shadow hover:scale-105 transition-transform duration-700"
@@ -54,7 +54,7 @@ export default function AboutUs() {
               </h2>
               
               <p className="text-gray-700 text-xl leading-relaxed mb-12 font-light">
-                Your Gateway to Global Trade and Prosperity. At Natureore Nigeria limited Limited, 
+                Your Gateway to Global Trade and Prosperity. At Natureore Nigeria  Limited, 
                 we don&#39;t just trade—we connect continents, cultivate opportunities, and drive 
                 sustainable growth. As a premier international export and import company, we 
                 specialize in agricultural products and solid-state mineral mining across Africa, 

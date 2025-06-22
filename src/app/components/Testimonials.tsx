@@ -83,7 +83,7 @@ export default function Testimonials() {
           </h2>
           
           <p className="text-emerald-100 text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            Discover why businesses worldwide trust Natureore Nigeria limited for their premium export needs.
+            Discover why businesses worldwide trust Natureore Nigeria Limited for their premium export needs.
           </p>
         </div>
 

@@ -43,7 +43,7 @@ export default function Footer() {
               </div>
               <div>
                 <span className="text-2xl font-bold">Natureore</span>
-                <div className="text-emerald-300 text-sm font-medium">Nigeria limited Limited</div>
+                <div className="text-emerald-300 text-sm font-medium">Nigeria  Limited</div>
               </div>
             </div>
             
@@ -169,7 +169,7 @@ export default function Footer() {
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-400">
               <p className="text-sm">
-                Copyright © 2025 Natureore Nigeria limited Limited. All rights reserved.
+                Copyright © 2025 Natureore Nigeria Limited. All rights reserved.
               </p>
               <div className="flex items-center space-x-2 text-emerald-300">
                 <Leaf className="w-4 h-4" />
