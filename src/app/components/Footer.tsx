@@ -85,7 +85,7 @@ export default function Footer() {
               Quick Links
             </h4>
             <div className="space-y-4">
-              {['Home', 'About Us', 'Products', 'Contact Us'].map((item) => (
+              {/* {['Home', 'About', 'Products', 'Contact'].map((item) => (
                 <Link 
                   key={item}
                   href={`/${item.toLowerCase().replace(/\s/g, '')}`} 
@@ -94,7 +94,39 @@ export default function Footer() {
                   <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
                   <span className="group-hover:translate-x-2 transition-transform duration-300">{item}</span>
                 </Link>
-              ))}
+              ))} */}
+               <Link 
+                  key='Home'
+                  href={`/`} 
+                  className=" text-gray-300 hover:text-emerald-300 transition-all duration-300 group flex items-center"
+                >
+                  <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
+                  <span className="group-hover:translate-x-2 transition-transform duration-300">Home</span>
+                </Link>
+                <Link 
+                  key='About us'
+                  href={`/about`} 
+                  className="block text-gray-300 hover:text-emerald-300 transition-all duration-300 group flex items-center"
+                >
+                  <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
+                  <span className="group-hover:translate-x-2 transition-transform duration-300">About Us</span>
+                </Link>
+                <Link 
+                  key='Our Products'
+                  href={`/products`} 
+                  className="block text-gray-300 hover:text-emerald-300 transition-all duration-300 group flex items-center"
+                >
+                  <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
+                  <span className="group-hover:translate-x-2 transition-transform duration-300">Our Products</span>
+                </Link>
+                <Link 
+                  key='Contact Us'
+                  href={`/contact`} 
+                  className="block text-gray-300 hover:text-emerald-300 transition-all duration-300 group flex items-center"
+                >
+                  <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
+                  <span className="group-hover:translate-x-2 transition-transform duration-300">Contact Us</span>
+                </Link>
             </div>
           </div>
 
