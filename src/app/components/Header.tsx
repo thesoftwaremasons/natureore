@@ -108,12 +108,19 @@ function Logo({ isScrolled }: { isScrolled: boolean }) {
         )}
       >
         <Image
-          src="/natureore.png"
-          width={50}
-          height={50}
+          src="/natureores.png"
+          width={60}
+          height={60}
           alt="Natureore Nigeria limited"
           className="rounded-xl transition-transform group-hover:scale-110"
         />
+        {/* <Image
+          src="/natureore.jpeg"
+          width={60}
+          height={60}
+          alt="Natureore Nigeria limited"
+          className="rounded-xl transition-transform group-hover:scale-110"
+        /> */}
       </div>
       <div
         className={clsx(

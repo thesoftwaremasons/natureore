@@ -242,46 +242,62 @@ export default function Contact() {
             </div>
 
             {/* Map and Additional Info */}
-            <div className="space-y-8">
-              {/* Map Placeholder */}
-              <div className="bg-gray-200 rounded-2xl h-80 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <MapPin className="w-12 h-12 mx-auto mb-2" />
-                  <p>Interactive Map</p>
-                  <p className="text-sm">Royal Gardens Estate, Ajah, Lekki</p>
+            <div className="space-y-2">
+              {/* Location Map Section */}
+              <section aria-label="Location Map" className="bg-gray-200 rounded-2xl p-6 flex flex-col items-center">
+                {/* <h3 className="text-lg font-semibold text-gray-800 mb-2">Our Location</h3>
+                <p className="text-gray-600 text-center mb-1">Royal Gardens Estate, Ajah, Lekki</p>
+                <div className="w-full flex justify-center mb-2">
+                  <span className="sr-only">Map location icon</span>
+                  <MapPin className="w-10 h-10 text-emerald-500" />
+                </div> */}
+                <div className="w-full aspect-video rounded-xl overflow-hidden shadow-lg border border-gray-300">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.46744787017!2d3.576055875679811!3d6.462309423869945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf75efd0a36cb%3A0x52d9f87111148665!2sRoyal%20Gardens%20Estate%2C%20D262%20Aromire%20Cres%2C%20Ajah%2C%20Lagos%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1750606080728!5m2!1sen!2sng"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    aria-label="Google Map showing Royal Gardens Estate, Ajah, Lekki"
+                  ></iframe>
                 </div>
-              </div>
+              </section>
 
               {/* Quick Contact */}
-              <div className="bg-green-50 rounded-2xl p-6">
+              <section className="bg-green-50 rounded-2xl p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Need Immediate Assistance?</h3>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
-                    <Phone className="w-5 h-5 text-green-600" />
-                    <span className="text-gray-700">Call us: +234 (0) 818 735 7792</span>
-                   
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100">
+                      <Phone className="w-5 h-5 text-green-600" />
+                    </span>
+                    <span className="text-gray-700 font-medium">Call us: <a href="tel:+2348187357792" className="underline hover:text-emerald-700">+234 (0) 818 735 7792</a></span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Mail className="w-5 h-5 text-green-600" />
-                    <span className="text-gray-700">Email: ayolanre@natureore.com</span>
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100">
+                      <Mail className="w-5 h-5 text-green-600" />
+                    </span>
+                    <span className="text-gray-700 font-medium">Email: <a href="mailto:ayolanre@natureore.com" className="underline hover:text-emerald-700">ayolanre@natureore.com</a></span>
                   </div>
                 </div>
                 <p className="text-sm text-gray-600 mt-4">
                   Our team typically responds to inquiries within 2-4 hours during business hours.
                 </p>
-              </div>
+              </section>
 
               {/* Export Guidelines */}
-              <div className="bg-blue-50 rounded-2xl p-6">
+              <section className="bg-blue-50 rounded-2xl p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Export Guidelines</h3>
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li>• Minimum order quantities apply</li>
-                  <li>• Quality certificates provided</li>
-                  <li>• International shipping available</li>
-                  <li>• Custom packaging options</li>
-                  <li>• Trade financing assistance</li>
+                <ul className="space-y-2 text-sm text-gray-700 list-disc list-inside">
+                  <li>Minimum order quantities apply</li>
+                  <li>Quality certificates provided</li>
+                  <li>International shipping available</li>
+                  <li>Custom packaging options</li>
+                  <li>Trade financing assistance</li>
                 </ul>
-              </div>
+              </section>
             </div>
           </div>
         </div>
