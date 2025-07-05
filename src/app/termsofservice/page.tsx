@@ -62,7 +62,7 @@ const TermsOfService: React.FC = () => (
         <section style={sectionStyle}>
             <h2 style={headingStyle}>3. Disclaimer</h2>
             <p style={{ color: "#334155", lineHeight: 1.7 }}>
-                The materials on this website are provided "as is". We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties.
+                The materials on this website are provided &quot;as is&quot;. We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties.
             </p>
         </section>
 
