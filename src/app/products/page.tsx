@@ -244,13 +244,13 @@ export default function Products() {
                     </div>
 
                     {/* Hover Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <div className="absolute bottom-4 left-4 right-4">
                         <Link href={`/products/${product.id}`} className="btn-primary w-full text-center">
                           View Details
                         </Link>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
 
                   <div className="p-6">
@@ -293,10 +293,11 @@ export default function Products() {
                     </div>
 
                     <div className="flex items-center justify-between">
-                      <div className="text-2xl font-bold text-emerald-600">
-                        Contact for Price
-                      </div>
-                      <ArrowRight className="w-5 h-5 text-emerald-600 group-hover:translate-x-1 transition-transform" />
+                   
+                       <Link href={`/products/${product.id}`} className="btn-primary w-full text-center">
+                          View Details
+                        </Link>
+                     
                     </div>
                   </div>
                 </div>
@@ -372,9 +373,9 @@ export default function Products() {
                       </div>
 
                       <div className="flex items-center justify-between">
-                        <div className="text-2xl font-bold text-emerald-600">
+                        {/* <div className="text-2xl font-bold text-emerald-600">
                           Contact for Price
-                        </div>
+                        </div> */}
                         <Link
                           href={`/products/${product.id}`}
                           className="btn-primary group"
@@ -541,12 +542,12 @@ export default function Products() {
                       {product.description}
                     </p>
                     
-                    <div className="flex items-center justify-between">
+                    {/* <div className="flex items-center justify-between">
                       <span className="text-emerald-600 font-bold">Contact for Price</span>
                       <Link href={`/products/${product.id}`} className="text-emerald-600 hover:text-emerald-700 transition-colors">
                         <ArrowRight className="w-4 h-4" />
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               ))}

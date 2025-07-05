@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Facebook, Twitter, Instagram, Linkedin, MapPin, Mail, Phone, ArrowRight, Leaf, Award, Globe } from 'lucide-react'
 
 export default function Footer() {
@@ -35,7 +36,15 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-8">
-              <div className="relative">
+
+                <Image
+                        src="/logo.png"
+                        width={72}
+                        height={72}
+                        alt="Natureore Nigeria Limited"
+                        className="rounded-xl transition-transform group-hover:scale-110"
+                      />
+              {/* <div className="relative">
                 <div className="w-14 h-14 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-2xl flex items-center justify-center shadow-2xl">
                   <span className="text-white font-bold text-2xl">N</span>
                 </div>
@@ -44,7 +53,7 @@ export default function Footer() {
               <div>
                 <span className="text-2xl font-bold">Natureore</span>
                 <div className="text-emerald-300 text-sm font-medium">Nigeria  Limited</div>
-              </div>
+              </div> */}
             </div>
             
             <p className="text-gray-300 mb-8 leading-relaxed font-light">
@@ -79,56 +88,29 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+            <div>
             <h4 className="text-xl font-bold mb-8 flex items-center">
               <div className="w-1 h-6 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded mr-3" />
               Quick Links
             </h4>
             <div className="space-y-4">
-              {/* {['Home', 'About', 'Products', 'Contact'].map((item) => (
-                <Link 
-                  key={item}
-                  href={`/${item.toLowerCase().replace(/\s/g, '')}`} 
-                  className="block text-gray-300 hover:text-emerald-300 transition-all duration-300 group flex items-center"
-                >
-                  <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
-                  <span className="group-hover:translate-x-2 transition-transform duration-300">{item}</span>
-                </Link>
-              ))} */}
-               <Link 
-                  key='Home'
-                  href={`/`} 
-                  className=" text-gray-300 hover:text-emerald-300 transition-all duration-300 group flex items-center"
-                >
-                  <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
-                  <span className="group-hover:translate-x-2 transition-transform duration-300">Home</span>
-                </Link>
-                <Link 
-                  key='About us'
-                  href={`/about`} 
-                  className="block text-gray-300 hover:text-emerald-300 transition-all duration-300 group flex items-center"
-                >
-                  <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
-                  <span className="group-hover:translate-x-2 transition-transform duration-300">About Us</span>
-                </Link>
-                <Link 
-                  key='Our Products'
-                  href={`/products`} 
-                  className="block text-gray-300 hover:text-emerald-300 transition-all duration-300 group flex items-center"
-                >
-                  <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
-                  <span className="group-hover:translate-x-2 transition-transform duration-300">Our Products</span>
-                </Link>
-                <Link 
-                  key='Contact Us'
-                  href={`/contact`} 
-                  className="block text-gray-300 hover:text-emerald-300 transition-all duration-300 group flex items-center"
-                >
-                  <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
-                  <span className="group-hover:translate-x-2 transition-transform duration-300">Contact Us</span>
-                </Link>
+              {[
+              { label: 'Home', href: '/' },
+              { label: 'About Us', href: '/about' },
+              { label: 'Our Products', href: '/products' },
+              { label: 'Contact Us', href: '/contact' },
+              ].map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="block text-gray-300 hover:text-emerald-300 transition-all duration-300 group flex items-center"
+              >
+                <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300 flex-shrink-0" />
+                <span className="group-hover:translate-x-2 transition-transform duration-300">{link.label}</span>
+              </Link>
+              ))}
             </div>
-          </div>
+            </div>
 
           {/* Product Categories */}
           <div>
