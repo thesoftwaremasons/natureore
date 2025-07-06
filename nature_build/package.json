@@ -2,11 +2,14 @@
   "name": "natureore",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.17.0"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-     "start": "NODE_ENV=production node app.js",
- 
+    "start": "next start",
+    "postinstall": "npm run build",
     "lint": "next lint"
   },
   "dependencies": {
